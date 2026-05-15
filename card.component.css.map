@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;c159eb3db7fe7af00a120510f527254fecd2e65065bb6063a3147f066133329f;/Users/rajesh/Downloads/equity-group/src/app/shared/components/card/card.component.ts"],
+  "sourcesContent": ["\n    .card {\n      background: var(--dark-2);\n      border: 1px solid var(--border);\n      border-radius: var(--radius-lg);\n      transition: all var(--transition);\n    }\n    .card-default  { padding: 24px; }\n    .card-compact  { padding: 16px; }\n    .card-flush    { padding: 0; overflow: hidden; }\n    .card-hoverable:hover { border-color: var(--border-hover); transform: translateY(-4px); box-shadow: var(--shadow-lg); }\n    .card-featured { border-color: var(--primary); background: var(--dark-3); }\n    .card-surface  { background: var(--surface); }\n    .card-glow     { box-shadow: var(--shadow-glow); }\n  "],
+  "mappings": ";AACI,CAAC;AACC,cAAY,IAAI;AAChB,UAAQ,IAAI,MAAM,IAAI;AACtB,iBAAe,IAAI;AACnB,cAAY,IAAI,IAAI;AACtB;AACA,CAAC;AAAgB,WAAS;AAAM;AAChC,CAAC;AAAgB,WAAS;AAAM;AAChC,CAAC;AAAgB,WAAS;AAAG,YAAU;AAAQ;AAC/C,CAAC,cAAc;AAAS,gBAAc,IAAI;AAAiB,aAAW,WAAW;AAAO,cAAY,IAAI;AAAc;AACtH,CAAC;AAAgB,gBAAc,IAAI;AAAY,cAAY,IAAI;AAAW;AAC1E,CAAC;AAAgB,cAAY,IAAI;AAAY;AAC7C,CAAC;AAAgB,cAAY,IAAI;AAAgB;",
+  "names": []
+}

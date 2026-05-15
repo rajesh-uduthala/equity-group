@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;5314846b0f4fc898d90544c9e3107eaa71696e4be0fac948f8caf5ff4d9dd2a3;/Users/rajesh/Downloads/equity-group/src/app/shared/components/loader/loader.component.ts"],
+  "sourcesContent": ["\n    .loader-wrap { display: flex; align-items: center; justify-content: center; }\n    .loader-sm  { width: 20px; height: 20px; }\n    .loader-md  { width: 36px; height: 36px; }\n    .loader-lg  { width: 56px; height: 56px; }\n    .loader-ring {\n      width: 100%; height: 100%;\n      border: 2px solid var(--border);\n      border-top-color: var(--primary);\n      border-radius: 50%;\n      animation: spin 0.7s linear infinite;\n    }\n    @keyframes spin { to { transform: rotate(360deg); } }\n  "],
+  "mappings": ";AACI,CAAC;AAAc,WAAS;AAAM,eAAa;AAAQ,mBAAiB;AAAQ;AAC5E,CAAC;AAAa,SAAO;AAAM,UAAQ;AAAM;AACzC,CAAC;AAAa,SAAO;AAAM,UAAQ;AAAM;AACzC,CAAC;AAAa,SAAO;AAAM,UAAQ;AAAM;AACzC,CAAC;AACC,SAAO;AAAM,UAAQ;AACrB,UAAQ,IAAI,MAAM,IAAI;AACtB,oBAAkB,IAAI;AACtB,iBAAe;AACf,aAAW,KAAK,KAAK,OAAO;AAC9B;AACA,WAFa;AAEK;AAAK,eAAW,OAAO;AAAS;AAAE;",
+  "names": []
+}
