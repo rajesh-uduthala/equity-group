@@ -10,7 +10,6 @@ import {
 import {
   CommonModule,
   Component,
-  ElementRef,
   HostListener,
   Injectable,
   effect,
@@ -26,7 +25,6 @@ import {
   ɵɵconditionalCreate,
   ɵɵdefineComponent,
   ɵɵdefineInjectable,
-  ɵɵdirectiveInject,
   ɵɵelement,
   ɵɵelementEnd,
   ɵɵelementStart,
@@ -81,89 +79,89 @@ var ThemeService = class _ThemeService {
 // src/app/shared/components/navbar/navbar.component.ts
 function NavbarComponent_Conditional_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 30);
+    \u0275\u0275elementStart(0, "div", 28);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_11_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275element(1, "div", 31);
-    \u0275\u0275elementStart(2, "div", 32)(3, "div", 33)(4, "a", 34)(5, "span", 35);
+    \u0275\u0275element(1, "div", 29);
+    \u0275\u0275elementStart(2, "div", 30)(3, "div", 31)(4, "a", 32)(5, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(6, "svg", 36);
-    \u0275\u0275element(7, "rect", 37)(8, "rect", 38)(9, "rect", 39)(10, "line", 40)(11, "line", 41);
+    \u0275\u0275elementStart(6, "svg", 34);
+    \u0275\u0275element(7, "rect", 35)(8, "rect", 36)(9, "rect", 37)(10, "line", 38)(11, "line", 39);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(12, " Forex ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(13, "a", 34)(14, "span", 35);
+    \u0275\u0275elementStart(13, "a", 32)(14, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(15, "svg", 36);
-    \u0275\u0275element(16, "polyline", 42)(17, "polyline", 43);
+    \u0275\u0275elementStart(15, "svg", 34);
+    \u0275\u0275element(16, "polyline", 40)(17, "polyline", 41);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(18, " Indices ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(19, "a", 34)(20, "span", 35);
+    \u0275\u0275elementStart(19, "a", 32)(20, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(21, "svg", 36);
-    \u0275\u0275element(22, "path", 44);
+    \u0275\u0275elementStart(21, "svg", 34);
+    \u0275\u0275element(22, "path", 42);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(23, " Commodities ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(24, "a", 34)(25, "span", 35);
+    \u0275\u0275elementStart(24, "a", 32)(25, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(26, "svg", 36);
-    \u0275\u0275element(27, "circle", 45)(28, "path", 46);
+    \u0275\u0275elementStart(26, "svg", 34);
+    \u0275\u0275element(27, "circle", 43)(28, "path", 44);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(29, " Shares ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(30, "a", 34)(31, "span", 35);
+    \u0275\u0275elementStart(30, "a", 32)(31, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(32, "svg", 36);
-    \u0275\u0275element(33, "path", 47)(34, "path", 48);
+    \u0275\u0275elementStart(32, "svg", 34);
+    \u0275\u0275element(33, "path", 45)(34, "path", 46);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(35, " ETFs ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(36, "a", 34)(37, "span", 35);
+    \u0275\u0275elementStart(36, "a", 32)(37, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(38, "svg", 36);
-    \u0275\u0275element(39, "circle", 45)(40, "path", 49);
+    \u0275\u0275elementStart(38, "svg", 34);
+    \u0275\u0275element(39, "circle", 43)(40, "path", 47);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(41, " Crypto CFDs ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(42, "a", 34)(43, "span", 35);
+    \u0275\u0275elementStart(42, "a", 32)(43, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(44, "svg", 36);
-    \u0275\u0275element(45, "path", 50);
+    \u0275\u0275elementStart(44, "svg", 34);
+    \u0275\u0275element(45, "path", 48);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(46, " Gold Option CFDs ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(47, "a", 51)(48, "span", 35);
+    \u0275\u0275elementStart(47, "a", 49)(48, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(49, "svg", 36);
-    \u0275\u0275element(50, "rect", 52)(51, "rect", 53)(52, "rect", 54)(53, "rect", 55);
+    \u0275\u0275elementStart(49, "svg", 34);
+    \u0275\u0275element(50, "rect", 50)(51, "rect", 51)(52, "rect", 52)(53, "rect", 53);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(54, " All products ");
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275element(55, "div", 56);
-    \u0275\u0275elementStart(56, "div", 57)(57, "p", 58);
+    \u0275\u0275element(55, "div", 54);
+    \u0275\u0275elementStart(56, "div", 55)(57, "p", 56);
     \u0275\u0275text(58, "Trading info");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(59, "a", 59);
+    \u0275\u0275elementStart(59, "a", 57);
     \u0275\u0275text(60, "Deposits & withdrawals");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(61, "a", 59);
+    \u0275\u0275elementStart(61, "a", 57);
     \u0275\u0275text(62, "Financing fees");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(63, "a", 59);
+    \u0275\u0275elementStart(63, "a", 57);
     \u0275\u0275text(64, "Expiry dates");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(65, "a", 59);
+    \u0275\u0275elementStart(65, "a", 57);
     \u0275\u0275text(66, "Holiday hours");
     \u0275\u0275elementEnd()()()();
   }
@@ -171,49 +169,49 @@ function NavbarComponent_Conditional_11_Template(rf, ctx) {
 function NavbarComponent_Conditional_18_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 60);
+    \u0275\u0275elementStart(0, "div", 58);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_18_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275element(1, "div", 31);
-    \u0275\u0275elementStart(2, "div", 61)(3, "a", 62);
+    \u0275\u0275element(1, "div", 29);
+    \u0275\u0275elementStart(2, "div", 59)(3, "a", 60);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_18_Template_a_click_3_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.activeMenu.set(null));
     });
-    \u0275\u0275elementStart(4, "span", 63);
+    \u0275\u0275elementStart(4, "span", 61);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(5, "svg", 64);
-    \u0275\u0275element(6, "rect", 65);
-    \u0275\u0275elementStart(7, "text", 66);
+    \u0275\u0275elementStart(5, "svg", 62);
+    \u0275\u0275element(6, "rect", 63);
+    \u0275\u0275elementStart(7, "text", 64);
     \u0275\u0275text(8, "4");
     \u0275\u0275elementEnd()()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(9, "span", 67)(10, "strong");
+    \u0275\u0275elementStart(9, "span", 65)(10, "strong");
     \u0275\u0275text(11, "MetaTrader 4");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "span", 68);
+    \u0275\u0275elementStart(12, "span", 66);
     \u0275\u0275text(13, "Industry-leading platform");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(14, "a", 34)(15, "span", 63);
+    \u0275\u0275elementStart(14, "a", 32)(15, "span", 61);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(16, "svg", 64);
-    \u0275\u0275element(17, "rect", 65);
-    \u0275\u0275elementStart(18, "text", 66);
+    \u0275\u0275elementStart(16, "svg", 62);
+    \u0275\u0275element(17, "rect", 63);
+    \u0275\u0275elementStart(18, "text", 64);
     \u0275\u0275text(19, "5");
     \u0275\u0275elementEnd()()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(20, "span", 67)(21, "strong");
+    \u0275\u0275elementStart(20, "span", 65)(21, "strong");
     \u0275\u0275text(22, "MetaTrader 5");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(23, "span", 68);
+    \u0275\u0275elementStart(23, "span", 66);
     \u0275\u0275text(24, "Next generation platform");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(25, "a", 51)(26, "span", 35);
+    \u0275\u0275elementStart(25, "a", 49)(26, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(27, "svg", 36);
-    \u0275\u0275element(28, "rect", 52)(29, "rect", 53)(30, "rect", 54)(31, "rect", 55);
+    \u0275\u0275elementStart(27, "svg", 34);
+    \u0275\u0275element(28, "rect", 50)(29, "rect", 51)(30, "rect", 52)(31, "rect", 53);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(32, " All platforms ");
     \u0275\u0275elementEnd()()();
@@ -222,51 +220,51 @@ function NavbarComponent_Conditional_18_Template(rf, ctx) {
 function NavbarComponent_Conditional_25_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 60);
+    \u0275\u0275elementStart(0, "div", 58);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_25_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275element(1, "div", 31);
-    \u0275\u0275elementStart(2, "div", 61)(3, "a", 69);
+    \u0275\u0275element(1, "div", 29);
+    \u0275\u0275elementStart(2, "div", 59)(3, "a", 67);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_25_Template_a_click_3_listener() {
       \u0275\u0275restoreView(_r3);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.activeMenu.set(null));
     });
-    \u0275\u0275elementStart(4, "span", 35);
+    \u0275\u0275elementStart(4, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(5, "svg", 36);
-    \u0275\u0275element(6, "path", 70);
+    \u0275\u0275elementStart(5, "svg", 34);
+    \u0275\u0275element(6, "path", 68);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(7, "span", 67)(8, "strong");
+    \u0275\u0275elementStart(7, "span", 65)(8, "strong");
     \u0275\u0275text(9, "Trading accounts");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "span", 68);
+    \u0275\u0275elementStart(10, "span", 66);
     \u0275\u0275text(11, "Explore account types");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(12, "a", 34)(13, "span", 35);
+    \u0275\u0275elementStart(12, "a", 32)(13, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(14, "svg", 36);
-    \u0275\u0275element(15, "rect", 71)(16, "path", 72);
+    \u0275\u0275elementStart(14, "svg", 34);
+    \u0275\u0275element(15, "rect", 69)(16, "path", 70);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(17, "span", 67)(18, "strong");
+    \u0275\u0275elementStart(17, "span", 65)(18, "strong");
     \u0275\u0275text(19, "Copy trading");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(20, "span", 68);
+    \u0275\u0275elementStart(20, "span", 66);
     \u0275\u0275text(21, "Follow expert traders");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(22, "a", 34)(23, "span", 35);
+    \u0275\u0275elementStart(22, "a", 32)(23, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(24, "svg", 36);
-    \u0275\u0275element(25, "circle", 73);
+    \u0275\u0275elementStart(24, "svg", 34);
+    \u0275\u0275element(25, "circle", 71);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(26, "span", 67)(27, "strong");
+    \u0275\u0275elementStart(26, "span", 65)(27, "strong");
     \u0275\u0275text(28, "Demo");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(29, "span", 68);
+    \u0275\u0275elementStart(29, "span", 66);
     \u0275\u0275text(30, "Practice risk-free");
     \u0275\u0275elementEnd()()()()();
   }
@@ -274,102 +272,102 @@ function NavbarComponent_Conditional_25_Template(rf, ctx) {
 function NavbarComponent_Conditional_32_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 60);
+    \u0275\u0275elementStart(0, "div", 58);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_32_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275element(1, "div", 31);
-    \u0275\u0275elementStart(2, "div", 61)(3, "a", 74);
+    \u0275\u0275element(1, "div", 29);
+    \u0275\u0275elementStart(2, "div", 59)(3, "a", 72);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_32_Template_a_click_3_listener() {
       \u0275\u0275restoreView(_r4);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.activeMenu.set(null));
     });
-    \u0275\u0275elementStart(4, "span", 35);
+    \u0275\u0275elementStart(4, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(5, "svg", 36);
-    \u0275\u0275element(6, "rect", 75)(7, "rect", 76)(8, "rect", 77)(9, "rect", 78);
+    \u0275\u0275elementStart(5, "svg", 34);
+    \u0275\u0275element(6, "rect", 73)(7, "rect", 74)(8, "rect", 75)(9, "rect", 76);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(10, "span", 67)(11, "strong");
+    \u0275\u0275elementStart(10, "span", 65)(11, "strong");
     \u0275\u0275text(12, "Live Dashboard");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 68);
+    \u0275\u0275elementStart(13, "span", 66);
     \u0275\u0275text(14, "Real-time prices & tools");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(15, "a", 79);
+    \u0275\u0275elementStart(15, "a", 77);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_32_Template_a_click_15_listener() {
       \u0275\u0275restoreView(_r4);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.activeMenu.set(null));
     });
-    \u0275\u0275elementStart(16, "span", 35);
+    \u0275\u0275elementStart(16, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(17, "svg", 36);
-    \u0275\u0275element(18, "polyline", 80);
+    \u0275\u0275elementStart(17, "svg", 34);
+    \u0275\u0275element(18, "polyline", 78);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(19, "span", 67)(20, "strong");
+    \u0275\u0275elementStart(19, "span", 65)(20, "strong");
     \u0275\u0275text(21, "Trading tools");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(22, "span", 68);
+    \u0275\u0275elementStart(22, "span", 66);
     \u0275\u0275text(23, "Charts, signals & more");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(24, "a", 34)(25, "span", 35);
+    \u0275\u0275elementStart(24, "a", 32)(25, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(26, "svg", 36);
-    \u0275\u0275element(27, "path", 81)(28, "path", 82);
+    \u0275\u0275elementStart(26, "svg", 34);
+    \u0275\u0275element(27, "path", 79)(28, "path", 80);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(29, "span", 67)(30, "strong");
+    \u0275\u0275elementStart(29, "span", 65)(30, "strong");
     \u0275\u0275text(31, "Education");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(32, "span", 68);
+    \u0275\u0275elementStart(32, "span", 66);
     \u0275\u0275text(33, "Learn to trade smarter");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(34, "a", 34)(35, "span", 35);
+    \u0275\u0275elementStart(34, "a", 32)(35, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(36, "svg", 36);
-    \u0275\u0275element(37, "path", 83)(38, "polyline", 84)(39, "polyline", 85);
+    \u0275\u0275elementStart(36, "svg", 34);
+    \u0275\u0275element(37, "path", 81)(38, "polyline", 82)(39, "polyline", 83);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(40, "span", 67)(41, "strong");
+    \u0275\u0275elementStart(40, "span", 65)(41, "strong");
     \u0275\u0275text(42, "News");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(43, "span", 68);
+    \u0275\u0275elementStart(43, "span", 66);
     \u0275\u0275text(44, "Market updates daily");
     \u0275\u0275elementEnd()()()()();
   }
 }
 function NavbarComponent_Conditional_39_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 60);
+    \u0275\u0275elementStart(0, "div", 58);
     \u0275\u0275listener("click", function NavbarComponent_Conditional_39_Template_div_click_0_listener($event) {
       return $event.stopPropagation();
     });
-    \u0275\u0275element(1, "div", 31);
-    \u0275\u0275elementStart(2, "div", 61)(3, "a", 34)(4, "span", 35);
+    \u0275\u0275element(1, "div", 29);
+    \u0275\u0275elementStart(2, "div", 59)(3, "a", 32)(4, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(5, "svg", 36);
-    \u0275\u0275element(6, "path", 86)(7, "circle", 87)(8, "path", 88)(9, "path", 89);
+    \u0275\u0275elementStart(5, "svg", 34);
+    \u0275\u0275element(6, "path", 84)(7, "circle", 85)(8, "path", 86)(9, "path", 87);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(10, "span", 67)(11, "strong");
+    \u0275\u0275elementStart(10, "span", 65)(11, "strong");
     \u0275\u0275text(12, "Partnerships");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 68);
+    \u0275\u0275elementStart(13, "span", 66);
     \u0275\u0275text(14, "Grow with Equiti");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(15, "a", 34)(16, "span", 35);
+    \u0275\u0275elementStart(15, "a", 32)(16, "span", 33);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(17, "svg", 36);
-    \u0275\u0275element(18, "path", 90)(19, "circle", 87)(20, "line", 91)(21, "line", 92);
+    \u0275\u0275elementStart(17, "svg", 34);
+    \u0275\u0275element(18, "path", 88)(19, "circle", 85)(20, "line", 89)(21, "line", 90);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(22, "span", 67)(23, "strong");
+    \u0275\u0275elementStart(22, "span", 65)(23, "strong");
     \u0275\u0275text(24, "Refer a friend");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(25, "span", 68);
+    \u0275\u0275elementStart(25, "span", 66);
     \u0275\u0275text(26, "Earn rewards together");
     \u0275\u0275elementEnd()()()()();
   }
@@ -378,7 +376,7 @@ function NavbarComponent_Conditional_44_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
     \u0275\u0275elementStart(0, "svg", 15);
-    \u0275\u0275element(1, "circle", 93)(2, "line", 94)(3, "line", 95)(4, "line", 96)(5, "line", 97)(6, "line", 98)(7, "line", 99)(8, "line", 100)(9, "line", 101);
+    \u0275\u0275element(1, "circle", 91)(2, "line", 92)(3, "line", 93)(4, "line", 94)(5, "line", 95)(6, "line", 96)(7, "line", 97)(8, "line", 98)(9, "line", 99);
     \u0275\u0275elementEnd();
   }
 }
@@ -386,30 +384,282 @@ function NavbarComponent_Conditional_45_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
     \u0275\u0275elementStart(0, "svg", 15);
-    \u0275\u0275element(1, "path", 102);
+    \u0275\u0275element(1, "path", 100);
     \u0275\u0275elementEnd();
   }
 }
-function NavbarComponent_Conditional_104_Template(rf, ctx) {
+function NavbarComponent_Conditional_61_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 24)(1, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_61_Template_a_click_1_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(2, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(3, "svg", 34);
+    \u0275\u0275element(4, "rect", 35)(5, "rect", 36)(6, "rect", 37);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(7, " Forex ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(8, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_61_Template_a_click_8_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(9, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(10, "svg", 34);
+    \u0275\u0275element(11, "polyline", 40)(12, "polyline", 41);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(13, " Indices ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(14, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_61_Template_a_click_14_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(15, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(16, "svg", 34);
+    \u0275\u0275element(17, "path", 42);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(18, " Commodities ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(19, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_61_Template_a_click_19_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(20, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(21, "svg", 34);
+    \u0275\u0275element(22, "circle", 43)(23, "path", 44);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(24, " Shares ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(25, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_61_Template_a_click_25_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(26, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(27, "svg", 34);
+    \u0275\u0275element(28, "circle", 43)(29, "path", 47);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(30, " Crypto CFDs ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(31, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_61_Template_a_click_31_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(32, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(33, "svg", 34);
+    \u0275\u0275element(34, "path", 48);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(35, " Gold Option CFDs ");
+    \u0275\u0275elementEnd()();
+  }
+}
+function NavbarComponent_Conditional_68_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r6 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 24)(1, "a", 103);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_68_Template_a_click_1_listener() {
+      \u0275\u0275restoreView(_r6);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(2, "span", 104);
+    \u0275\u0275text(3, "4");
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(4, " MetaTrader 4 ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(5, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_68_Template_a_click_5_listener() {
+      \u0275\u0275restoreView(_r6);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(6, "span", 104);
+    \u0275\u0275text(7, "5");
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(8, " MetaTrader 5 ");
+    \u0275\u0275elementEnd()();
+  }
+}
+function NavbarComponent_Conditional_75_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r7 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 24)(1, "a", 105);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_75_Template_a_click_1_listener() {
+      \u0275\u0275restoreView(_r7);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(2, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(3, "svg", 34);
+    \u0275\u0275element(4, "path", 68);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(5, " Trading Accounts ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(6, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_75_Template_a_click_6_listener() {
+      \u0275\u0275restoreView(_r7);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(7, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(8, "svg", 34);
+    \u0275\u0275element(9, "rect", 69)(10, "path", 70);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(11, " Copy Trading ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(12, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_75_Template_a_click_12_listener() {
+      \u0275\u0275restoreView(_r7);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(13, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(14, "svg", 34);
+    \u0275\u0275element(15, "circle", 71);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(16, " Demo Account ");
+    \u0275\u0275elementEnd()();
+  }
+}
+function NavbarComponent_Conditional_82_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r8 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 24)(1, "a", 106);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_82_Template_a_click_1_listener() {
+      \u0275\u0275restoreView(_r8);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(2, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(3, "svg", 34);
+    \u0275\u0275element(4, "rect", 73)(5, "rect", 74)(6, "rect", 75)(7, "rect", 76);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(8, " Live Dashboard ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(9, "a", 107);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_82_Template_a_click_9_listener() {
+      \u0275\u0275restoreView(_r8);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(10, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(11, "svg", 34);
+    \u0275\u0275element(12, "polyline", 78);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(13, " Trading Tools ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(14, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_82_Template_a_click_14_listener() {
+      \u0275\u0275restoreView(_r8);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(15, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(16, "svg", 34);
+    \u0275\u0275element(17, "path", 79)(18, "path", 80);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(19, " Education ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(20, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_82_Template_a_click_20_listener() {
+      \u0275\u0275restoreView(_r8);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(21, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(22, "svg", 34);
+    \u0275\u0275element(23, "path", 81);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(24, " News ");
+    \u0275\u0275elementEnd()();
+  }
+}
+function NavbarComponent_Conditional_89_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r9 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 24)(1, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_89_Template_a_click_1_listener() {
+      \u0275\u0275restoreView(_r9);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(2, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(3, "svg", 34);
+    \u0275\u0275element(4, "path", 84)(5, "circle", 85)(6, "path", 86)(7, "path", 87);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(8, " Partnerships ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(9, "a", 101);
+    \u0275\u0275listener("click", function NavbarComponent_Conditional_89_Template_a_click_9_listener() {
+      \u0275\u0275restoreView(_r9);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.closeMobile());
+    });
+    \u0275\u0275elementStart(10, "span", 102);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(11, "svg", 34);
+    \u0275\u0275element(12, "path", 88)(13, "circle", 85)(14, "line", 89)(15, "line", 90);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(16, " Refer a Friend ");
+    \u0275\u0275elementEnd()();
+  }
+}
+function NavbarComponent_Conditional_94_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 103);
-    \u0275\u0275element(1, "circle", 93)(2, "line", 94)(3, "line", 95)(4, "line", 96)(5, "line", 97)(6, "line", 98)(7, "line", 99)(8, "line", 100)(9, "line", 101);
+    \u0275\u0275elementStart(0, "svg", 108);
+    \u0275\u0275element(1, "circle", 91)(2, "line", 92)(3, "line", 93)(4, "line", 94)(5, "line", 95)(6, "line", 96)(7, "line", 97)(8, "line", 98)(9, "line", 99);
     \u0275\u0275elementEnd();
     \u0275\u0275text(10, " Light Mode ");
   }
 }
-function NavbarComponent_Conditional_105_Template(rf, ctx) {
+function NavbarComponent_Conditional_95_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 103);
-    \u0275\u0275element(1, "path", 102);
+    \u0275\u0275elementStart(0, "svg", 108);
+    \u0275\u0275element(1, "path", 100);
     \u0275\u0275elementEnd();
     \u0275\u0275text(2, " Dark Mode ");
   }
 }
 var NavbarComponent = class _NavbarComponent {
-  el;
   scrolled = signal(false, ...ngDevMode ? [{ debugName: "scrolled" }] : (
     /* istanbul ignore next */
     []
@@ -422,29 +672,38 @@ var NavbarComponent = class _NavbarComponent {
     /* istanbul ignore next */
     []
   ));
+  activeMobileSection = signal(null, ...ngDevMode ? [{ debugName: "activeMobileSection" }] : (
+    /* istanbul ignore next */
+    []
+  ));
   theme = inject(ThemeService);
-  constructor(el) {
-    this.el = el;
+  constructor() {
   }
   onScroll() {
     this.scrolled.set(window.scrollY > 40);
   }
   toggleMobile() {
     this.mobileOpen.update((v) => !v);
+    if (!this.mobileOpen())
+      this.activeMobileSection.set(null);
   }
   closeMobile() {
     this.mobileOpen.set(false);
     this.activeMenu.set(null);
+    this.activeMobileSection.set(null);
   }
   toggleMenu(name, event) {
     event.stopPropagation();
     this.activeMenu.set(this.activeMenu() === name ? null : name);
   }
+  toggleMobileSection(name) {
+    this.activeMobileSection.set(this.activeMobileSection() === name ? null : name);
+  }
   onDocClick() {
     this.activeMenu.set(null);
   }
   static \u0275fac = function NavbarComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _NavbarComponent)(\u0275\u0275directiveInject(ElementRef));
+    return new (__ngFactoryType__ || _NavbarComponent)();
   };
   static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _NavbarComponent, selectors: [["app-navbar"]], hostBindings: function NavbarComponent_HostBindings(rf, ctx) {
     if (rf & 1) {
@@ -454,7 +713,7 @@ var NavbarComponent = class _NavbarComponent {
         return ctx.onDocClick();
       }, \u0275\u0275resolveDocument);
     }
-  }, decls: 108, vars: 35, consts: [[1, "navbar"], [1, "nav-inner"], ["routerLink", "/", 1, "logo", 3, "click"], ["src", "https://eq-cdn.equiti-me.com/website/documents/equiti-company-logo.svg", "alt", "Equiti", 1, "logo-img"], ["aria-label", "Main navigation", 1, "nav-links"], [1, "nav-item", 3, "click"], [1, "nav-label"], [1, "caret"], ["width", "10", "height", "6", "viewBox", "0 0 10 6", "fill", "none"], ["d", "M1 1l4 4 4-4", "stroke", "currentColor", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], [1, "dropdown", "products-dd"], [1, "dropdown"], ["href", "#", 1, "nav-plain"], [1, "nav-actions"], [1, "theme-toggle", 3, "click"], ["width", "18", "height", "18", "viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round"], ["routerLink", "/register", 1, "btn-start"], ["aria-label", "Toggle menu", 1, "hamburger", 3, "click"], ["role", "navigation", 1, "mobile-menu"], [1, "mm-group"], [1, "mm-label"], ["href", "#", 1, "mm-link", 3, "click"], ["routerLink", "/platforms/metatrader-4", 1, "mm-link", 3, "click"], ["routerLink", "/accounts", 1, "mm-link", 3, "click"], ["routerLink", "/dashboard", 1, "mm-link", 3, "click"], ["routerLink", "/trading-tools", 1, "mm-link", 3, "click"], ["href", "#", 1, "mm-link", "mm-about", 3, "click"], [1, "mm-actions"], [1, "mm-theme-toggle", 3, "click"], ["routerLink", "/register", 1, "mm-cta", 3, "click"], [1, "dropdown", "products-dd", 3, "click"], [1, "dd-tip"], [1, "dd-body", "products-body"], [1, "dd-col"], ["href", "#", 1, "dd-item"], [1, "dd-icon"], ["viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "1.8"], ["x", "3", "y", "12", "width", "3", "height", "9", "rx", "1"], ["x", "10.5", "y", "6", "width", "3", "height", "15", "rx", "1"], ["x", "18", "y", "3", "width", "3", "height", "18", "rx", "1"], ["x1", "4.5", "y1", "8", "x2", "4.5", "y2", "11"], ["x1", "12", "y1", "2", "x2", "12", "y2", "5"], ["points", "22 7 13.5 15.5 8.5 10.5 2 17"], ["points", "16 7 22 7 22 13"], ["d", "M12 2C8 7 5 10.5 5 14a7 7 0 0 0 14 0c0-3.5-3-7-7-12z"], ["cx", "12", "cy", "12", "r", "9"], ["d", "M12 8v4l3 3"], ["d", "M7 16l5-12 5 12M9.5 10.5h5"], ["d", "M3 20h18"], ["d", "M12 6v2m0 8v2M9.5 9.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 2.5-5 2.5-5 5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5"], ["d", "M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"], ["href", "#", 1, "dd-item", "dd-item-all"], ["x", "3", "y", "3", "width", "7", "height", "7", "rx", "1"], ["x", "14", "y", "3", "width", "7", "height", "7", "rx", "1"], ["x", "3", "y", "14", "width", "7", "height", "7", "rx", "1"], ["x", "14", "y", "14", "width", "7", "height", "7", "rx", "1"], [1, "dd-divider-v"], [1, "dd-col", "dd-col-right"], [1, "dd-section-label"], ["href", "#", 1, "dd-item", "dd-item-plain"], [1, "dropdown", 3, "click"], [1, "dd-body"], ["routerLink", "/platforms/metatrader-4", 1, "dd-item", 3, "click"], [1, "dd-icon", "dd-icon-lg"], ["viewBox", "0 0 40 40", "fill", "none"], ["width", "40", "height", "40", "rx", "8", "fill", "#E8FBF8"], ["x", "20", "y", "26", "text-anchor", "middle", "font-size", "16", "font-weight", "700", "fill", "#00B8A0"], [1, "dd-item-text"], [1, "dd-sub"], ["routerLink", "/accounts", 1, "dd-item", 3, "click"], ["d", "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"], ["x", "9", "y", "9", "width", "13", "height", "13", "rx", "2"], ["d", "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"], ["cx", "12", "cy", "12", "r", "9", "stroke-dasharray", "4 2"], ["routerLink", "/dashboard", 1, "dd-item", 3, "click"], ["x", "3", "y", "3", "width", "7", "height", "9", "rx", "1"], ["x", "14", "y", "3", "width", "7", "height", "5", "rx", "1"], ["x", "14", "y", "12", "width", "7", "height", "9", "rx", "1"], ["x", "3", "y", "16", "width", "7", "height", "5", "rx", "1"], ["routerLink", "/trading-tools", 1, "dd-item", 3, "click"], ["points", "22 12 18 12 15 21 9 3 6 12 2 12"], ["d", "M4 19.5A2.5 2.5 0 0 1 6.5 17H20"], ["d", "M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"], ["d", "M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"], ["points", "17 21 17 13 7 13 7 21"], ["points", "7 3 7 8 15 8"], ["d", "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"], ["cx", "9", "cy", "7", "r", "4"], ["d", "M23 21v-2a4 4 0 0 0-3-3.87"], ["d", "M16 3.13a4 4 0 0 1 0 7.75"], ["d", "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"], ["x1", "19", "y1", "8", "x2", "19", "y2", "14"], ["x1", "22", "y1", "11", "x2", "16", "y2", "11"], ["cx", "12", "cy", "12", "r", "5"], ["x1", "12", "y1", "1", "x2", "12", "y2", "3"], ["x1", "12", "y1", "21", "x2", "12", "y2", "23"], ["x1", "4.22", "y1", "4.22", "x2", "5.64", "y2", "5.64"], ["x1", "18.36", "y1", "18.36", "x2", "19.78", "y2", "19.78"], ["x1", "1", "y1", "12", "x2", "3", "y2", "12"], ["x1", "21", "y1", "12", "x2", "23", "y2", "12"], ["x1", "4.22", "y1", "19.78", "x2", "5.64", "y2", "18.36"], ["x1", "18.36", "y1", "5.64", "x2", "19.78", "y2", "4.22"], ["d", "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"], ["width", "16", "height", "16", "viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round"]], template: function NavbarComponent_Template(rf, ctx) {
+  }, decls: 96, vars: 60, consts: [[1, "navbar"], [1, "nav-inner"], ["routerLink", "/", 1, "logo", 3, "click"], ["src", "https://eq-cdn.equiti-me.com/website/documents/equiti-company-logo.svg", "alt", "Equiti", 1, "logo-img"], ["aria-label", "Main navigation", 1, "nav-links"], [1, "nav-item", 3, "click"], [1, "nav-label"], [1, "caret"], ["width", "10", "height", "6", "viewBox", "0 0 10 6", "fill", "none"], ["d", "M1 1l4 4 4-4", "stroke", "currentColor", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], [1, "dropdown", "products-dd"], [1, "dropdown"], ["href", "#", 1, "nav-plain"], [1, "nav-actions"], [1, "theme-toggle", 3, "click"], ["width", "18", "height", "18", "viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round"], ["routerLink", "/register", 1, "btn-start"], ["aria-label", "Toggle menu", 1, "hamburger", 3, "click"], ["role", "navigation", 1, "mobile-menu"], ["routerLink", "/register", 1, "mm-cta-top", 3, "click"], [1, "mm-section"], [1, "mm-header", 3, "click"], ["width", "16", "height", "16", "viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round", 1, "mm-chevron"], ["points", "6 9 12 15 18 9"], [1, "mm-items"], ["href", "#", 1, "mm-standalone", 3, "click"], [1, "mm-actions"], [1, "mm-theme-toggle", 3, "click"], [1, "dropdown", "products-dd", 3, "click"], [1, "dd-tip"], [1, "dd-body", "products-body"], [1, "dd-col"], ["href", "#", 1, "dd-item"], [1, "dd-icon"], ["viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "1.8"], ["x", "3", "y", "12", "width", "3", "height", "9", "rx", "1"], ["x", "10.5", "y", "6", "width", "3", "height", "15", "rx", "1"], ["x", "18", "y", "3", "width", "3", "height", "18", "rx", "1"], ["x1", "4.5", "y1", "8", "x2", "4.5", "y2", "11"], ["x1", "12", "y1", "2", "x2", "12", "y2", "5"], ["points", "22 7 13.5 15.5 8.5 10.5 2 17"], ["points", "16 7 22 7 22 13"], ["d", "M12 2C8 7 5 10.5 5 14a7 7 0 0 0 14 0c0-3.5-3-7-7-12z"], ["cx", "12", "cy", "12", "r", "9"], ["d", "M12 8v4l3 3"], ["d", "M7 16l5-12 5 12M9.5 10.5h5"], ["d", "M3 20h18"], ["d", "M12 6v2m0 8v2M9.5 9.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 2.5-5 2.5-5 5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5"], ["d", "M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"], ["href", "#", 1, "dd-item", "dd-item-all"], ["x", "3", "y", "3", "width", "7", "height", "7", "rx", "1"], ["x", "14", "y", "3", "width", "7", "height", "7", "rx", "1"], ["x", "3", "y", "14", "width", "7", "height", "7", "rx", "1"], ["x", "14", "y", "14", "width", "7", "height", "7", "rx", "1"], [1, "dd-divider-v"], [1, "dd-col", "dd-col-right"], [1, "dd-section-label"], ["href", "#", 1, "dd-item", "dd-item-plain"], [1, "dropdown", 3, "click"], [1, "dd-body"], ["routerLink", "/platforms/metatrader-4", 1, "dd-item", 3, "click"], [1, "dd-icon", "dd-icon-lg"], ["viewBox", "0 0 40 40", "fill", "none"], ["width", "40", "height", "40", "rx", "8", "fill", "#E8FBF8"], ["x", "20", "y", "26", "text-anchor", "middle", "font-size", "16", "font-weight", "700", "fill", "#00B8A0"], [1, "dd-item-text"], [1, "dd-sub"], ["routerLink", "/accounts", 1, "dd-item", 3, "click"], ["d", "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"], ["x", "9", "y", "9", "width", "13", "height", "13", "rx", "2"], ["d", "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"], ["cx", "12", "cy", "12", "r", "9", "stroke-dasharray", "4 2"], ["routerLink", "/dashboard", 1, "dd-item", 3, "click"], ["x", "3", "y", "3", "width", "7", "height", "9", "rx", "1"], ["x", "14", "y", "3", "width", "7", "height", "5", "rx", "1"], ["x", "14", "y", "12", "width", "7", "height", "9", "rx", "1"], ["x", "3", "y", "16", "width", "7", "height", "5", "rx", "1"], ["routerLink", "/trading-tools", 1, "dd-item", 3, "click"], ["points", "22 12 18 12 15 21 9 3 6 12 2 12"], ["d", "M4 19.5A2.5 2.5 0 0 1 6.5 17H20"], ["d", "M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"], ["d", "M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"], ["points", "17 21 17 13 7 13 7 21"], ["points", "7 3 7 8 15 8"], ["d", "M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"], ["cx", "9", "cy", "7", "r", "4"], ["d", "M23 21v-2a4 4 0 0 0-3-3.87"], ["d", "M16 3.13a4 4 0 0 1 0 7.75"], ["d", "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"], ["x1", "19", "y1", "8", "x2", "19", "y2", "14"], ["x1", "22", "y1", "11", "x2", "16", "y2", "11"], ["cx", "12", "cy", "12", "r", "5"], ["x1", "12", "y1", "1", "x2", "12", "y2", "3"], ["x1", "12", "y1", "21", "x2", "12", "y2", "23"], ["x1", "4.22", "y1", "4.22", "x2", "5.64", "y2", "5.64"], ["x1", "18.36", "y1", "18.36", "x2", "19.78", "y2", "19.78"], ["x1", "1", "y1", "12", "x2", "3", "y2", "12"], ["x1", "21", "y1", "12", "x2", "23", "y2", "12"], ["x1", "4.22", "y1", "19.78", "x2", "5.64", "y2", "18.36"], ["x1", "18.36", "y1", "5.64", "x2", "19.78", "y2", "4.22"], ["d", "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"], ["href", "#", 1, "mm-link", 3, "click"], [1, "mm-icon"], ["routerLink", "/platforms/metatrader-4", 1, "mm-link", 3, "click"], [1, "mm-icon", "mm-icon-badge"], ["routerLink", "/accounts", 1, "mm-link", 3, "click"], ["routerLink", "/dashboard", 1, "mm-link", 3, "click"], ["routerLink", "/trading-tools", 1, "mm-link", 3, "click"], ["width", "16", "height", "16", "viewBox", "0 0 24 24", "fill", "none", "stroke", "currentColor", "stroke-width", "2", "stroke-linecap", "round", "stroke-linejoin", "round"]], template: function NavbarComponent_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "header", 0)(1, "div", 1)(2, "a", 2);
       \u0275\u0275listener("click", function NavbarComponent_Template_a_click_2_listener() {
@@ -556,135 +815,94 @@ var NavbarComponent = class _NavbarComponent {
       });
       \u0275\u0275element(49, "span")(50, "span")(51, "span");
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(52, "div", 18)(53, "div", 19)(54, "span", 20);
-      \u0275\u0275text(55, "Products");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(56, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_56_listener() {
+      \u0275\u0275elementStart(52, "div", 18)(53, "a", 19);
+      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_53_listener() {
         return ctx.closeMobile();
       });
-      \u0275\u0275text(57, "Forex");
+      \u0275\u0275text(54, "START TRADING");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(58, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_58_listener() {
-        return ctx.closeMobile();
+      \u0275\u0275elementStart(55, "div", 20)(56, "button", 21);
+      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_56_listener() {
+        return ctx.toggleMobileSection("products");
       });
-      \u0275\u0275text(59, "Indices");
+      \u0275\u0275elementStart(57, "span");
+      \u0275\u0275text(58, "Products");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(60, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_60_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(61, "Commodities");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(62, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_62_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(63, "Shares");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(64, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_64_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(65, "Crypto CFDs");
+      \u0275\u0275namespaceSVG();
+      \u0275\u0275elementStart(59, "svg", 22);
+      \u0275\u0275element(60, "polyline", 23);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(66, "div", 19)(67, "span", 20);
-      \u0275\u0275text(68, "Platforms");
+      \u0275\u0275conditionalCreate(61, NavbarComponent_Conditional_61_Template, 36, 0, "div", 24);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(69, "a", 22);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_69_listener() {
-        return ctx.closeMobile();
+      \u0275\u0275namespaceHTML();
+      \u0275\u0275elementStart(62, "div", 20)(63, "button", 21);
+      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_63_listener() {
+        return ctx.toggleMobileSection("platforms");
       });
-      \u0275\u0275text(70, "MetaTrader 4");
+      \u0275\u0275elementStart(64, "span");
+      \u0275\u0275text(65, "Platforms");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(71, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_71_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(72, "MetaTrader 5");
+      \u0275\u0275namespaceSVG();
+      \u0275\u0275elementStart(66, "svg", 22);
+      \u0275\u0275element(67, "polyline", 23);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(73, "div", 19)(74, "span", 20);
-      \u0275\u0275text(75, "Accounts");
+      \u0275\u0275conditionalCreate(68, NavbarComponent_Conditional_68_Template, 9, 0, "div", 24);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(76, "a", 23);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_76_listener() {
-        return ctx.closeMobile();
+      \u0275\u0275namespaceHTML();
+      \u0275\u0275elementStart(69, "div", 20)(70, "button", 21);
+      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_70_listener() {
+        return ctx.toggleMobileSection("accounts");
       });
-      \u0275\u0275text(77, "Trading Accounts");
+      \u0275\u0275elementStart(71, "span");
+      \u0275\u0275text(72, "Accounts");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(78, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_78_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(79, "Copy Trading");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(80, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_80_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(81, "Demo Account");
+      \u0275\u0275namespaceSVG();
+      \u0275\u0275elementStart(73, "svg", 22);
+      \u0275\u0275element(74, "polyline", 23);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(82, "div", 19)(83, "span", 20);
-      \u0275\u0275text(84, "Insights");
+      \u0275\u0275conditionalCreate(75, NavbarComponent_Conditional_75_Template, 17, 0, "div", 24);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(85, "a", 24);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_85_listener() {
-        return ctx.closeMobile();
+      \u0275\u0275namespaceHTML();
+      \u0275\u0275elementStart(76, "div", 20)(77, "button", 21);
+      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_77_listener() {
+        return ctx.toggleMobileSection("insights");
       });
-      \u0275\u0275text(86, "Live Dashboard");
+      \u0275\u0275elementStart(78, "span");
+      \u0275\u0275text(79, "Insights");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(87, "a", 25);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_87_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(88, "Trading Tools");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(89, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_89_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(90, "Education");
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(91, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_91_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(92, "News");
+      \u0275\u0275namespaceSVG();
+      \u0275\u0275elementStart(80, "svg", 22);
+      \u0275\u0275element(81, "polyline", 23);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(93, "div", 19)(94, "span", 20);
-      \u0275\u0275text(95, "Partners");
+      \u0275\u0275conditionalCreate(82, NavbarComponent_Conditional_82_Template, 25, 0, "div", 24);
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(96, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_96_listener() {
-        return ctx.closeMobile();
+      \u0275\u0275namespaceHTML();
+      \u0275\u0275elementStart(83, "div", 20)(84, "button", 21);
+      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_84_listener() {
+        return ctx.toggleMobileSection("partners");
       });
-      \u0275\u0275text(97, "Partnerships");
+      \u0275\u0275elementStart(85, "span");
+      \u0275\u0275text(86, "Partners");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(98, "a", 21);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_98_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(99, "Refer a Friend");
+      \u0275\u0275namespaceSVG();
+      \u0275\u0275elementStart(87, "svg", 22);
+      \u0275\u0275element(88, "polyline", 23);
       \u0275\u0275elementEnd()();
-      \u0275\u0275elementStart(100, "a", 26);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_100_listener() {
+      \u0275\u0275conditionalCreate(89, NavbarComponent_Conditional_89_Template, 17, 0, "div", 24);
+      \u0275\u0275elementEnd();
+      \u0275\u0275namespaceHTML();
+      \u0275\u0275elementStart(90, "a", 25);
+      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_90_listener() {
         return ctx.closeMobile();
       });
-      \u0275\u0275text(101, "About us");
+      \u0275\u0275text(91, "About us");
       \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(102, "div", 27)(103, "button", 28);
-      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_103_listener($event) {
+      \u0275\u0275elementStart(92, "div", 26)(93, "button", 27);
+      \u0275\u0275listener("click", function NavbarComponent_Template_button_click_93_listener($event) {
         ctx.theme.toggle();
         return $event.stopPropagation();
       });
-      \u0275\u0275conditionalCreate(104, NavbarComponent_Conditional_104_Template, 11, 0)(105, NavbarComponent_Conditional_105_Template, 3, 0);
-      \u0275\u0275elementEnd();
-      \u0275\u0275elementStart(106, "a", 29);
-      \u0275\u0275listener("click", function NavbarComponent_Template_a_click_106_listener() {
-        return ctx.closeMobile();
-      });
-      \u0275\u0275text(107, "START TRADING");
+      \u0275\u0275conditionalCreate(94, NavbarComponent_Conditional_94_Template, 11, 0)(95, NavbarComponent_Conditional_95_Template, 3, 0);
       \u0275\u0275elementEnd()()()();
     }
     if (rf & 2) {
@@ -728,10 +946,40 @@ var NavbarComponent = class _NavbarComponent {
       \u0275\u0275attribute("aria-expanded", ctx.mobileOpen());
       \u0275\u0275advance(4);
       \u0275\u0275classProp("open", ctx.mobileOpen());
-      \u0275\u0275advance(52);
-      \u0275\u0275conditional(ctx.theme.isDark() ? 104 : 105);
+      \u0275\u0275advance(4);
+      \u0275\u0275classProp("active", ctx.activeMobileSection() === "products");
+      \u0275\u0275advance(3);
+      \u0275\u0275classProp("open", ctx.activeMobileSection() === "products");
+      \u0275\u0275advance(2);
+      \u0275\u0275conditional(ctx.activeMobileSection() === "products" ? 61 : -1);
+      \u0275\u0275advance(2);
+      \u0275\u0275classProp("active", ctx.activeMobileSection() === "platforms");
+      \u0275\u0275advance(3);
+      \u0275\u0275classProp("open", ctx.activeMobileSection() === "platforms");
+      \u0275\u0275advance(2);
+      \u0275\u0275conditional(ctx.activeMobileSection() === "platforms" ? 68 : -1);
+      \u0275\u0275advance(2);
+      \u0275\u0275classProp("active", ctx.activeMobileSection() === "accounts");
+      \u0275\u0275advance(3);
+      \u0275\u0275classProp("open", ctx.activeMobileSection() === "accounts");
+      \u0275\u0275advance(2);
+      \u0275\u0275conditional(ctx.activeMobileSection() === "accounts" ? 75 : -1);
+      \u0275\u0275advance(2);
+      \u0275\u0275classProp("active", ctx.activeMobileSection() === "insights");
+      \u0275\u0275advance(3);
+      \u0275\u0275classProp("open", ctx.activeMobileSection() === "insights");
+      \u0275\u0275advance(2);
+      \u0275\u0275conditional(ctx.activeMobileSection() === "insights" ? 82 : -1);
+      \u0275\u0275advance(2);
+      \u0275\u0275classProp("active", ctx.activeMobileSection() === "partners");
+      \u0275\u0275advance(3);
+      \u0275\u0275classProp("open", ctx.activeMobileSection() === "partners");
+      \u0275\u0275advance(2);
+      \u0275\u0275conditional(ctx.activeMobileSection() === "partners" ? 89 : -1);
+      \u0275\u0275advance(5);
+      \u0275\u0275conditional(ctx.theme.isDark() ? 94 : 95);
     }
-  }, dependencies: [CommonModule, RouterModule, RouterLink], styles: ['\n.navbar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n  background: var(--surface);\n  border-bottom: 1px solid var(--border);\n  transition: box-shadow var(--transition), background var(--transition);\n}\n.navbar.scrolled[_ngcontent-%COMP%] {\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);\n}\n.nav-inner[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  height: 64px;\n  padding: 0 32px;\n}\n.logo[_ngcontent-%COMP%] {\n  flex: 1;\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n}\n.logo-img[_ngcontent-%COMP%] {\n  height: 32px;\n  width: auto;\n  display: block;\n}\n.nav-links[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0;\n}\n.nav-item[_ngcontent-%COMP%] {\n  position: relative;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  color: var(--text-2, #374151);\n  cursor: pointer;\n  -webkit-user-select: none;\n  user-select: none;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-item[_ngcontent-%COMP%]:hover, \n.nav-item.active[_ngcontent-%COMP%] {\n  color: #00B8A0;\n}\n.nav-item.active[_ngcontent-%COMP%] {\n  background: rgba(0, 184, 160, 0.06);\n}\n.nav-label[_ngcontent-%COMP%] {\n  pointer-events: none;\n}\n.caret[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  opacity: 0.55;\n  transition: transform 0.2s, opacity 0.2s;\n}\n.caret.open[_ngcontent-%COMP%] {\n  transform: rotate(180deg);\n  opacity: 1;\n}\n.nav-item.active[_ngcontent-%COMP%]   .caret[_ngcontent-%COMP%] {\n  opacity: 1;\n}\n.nav-plain[_ngcontent-%COMP%] {\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-plain[_ngcontent-%COMP%]:hover {\n  color: var(--text, #1A1D2E);\n}\n.nav-actions[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n  gap: 10px;\n}\n.theme-toggle[_ngcontent-%COMP%] {\n  width: 36px;\n  height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 50%;\n  color: var(--text-muted);\n  cursor: pointer;\n  transition:\n    background 0.2s,\n    color 0.2s,\n    border-color 0.2s;\n  flex-shrink: 0;\n}\n.theme-toggle[_ngcontent-%COMP%]:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n.btn-start[_ngcontent-%COMP%] {\n  display: inline-block;\n  padding: 9px 20px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: var(--radius-sm);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.btn-start[_ngcontent-%COMP%]:hover {\n  background: var(--primary-hover);\n}\n.dropdown[_ngcontent-%COMP%] {\n  position: absolute;\n  top: calc(100% + 12px);\n  left: 50%;\n  transform: translateX(-50%);\n  min-width: 240px;\n  background: var(--surface);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.13);\n  z-index: 200;\n  animation: _ngcontent-%COMP%_ddFadeIn 0.15s ease;\n}\n.products-dd[_ngcontent-%COMP%] {\n  min-width: 420px;\n  left: 0;\n  transform: none;\n}\n@keyframes _ngcontent-%COMP%_ddFadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-50%) translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n  }\n}\n.products-dd[_ngcontent-%COMP%] {\n  animation: _ngcontent-%COMP%_ddFadeInLeft 0.15s ease;\n}\n@keyframes _ngcontent-%COMP%_ddFadeInLeft {\n  from {\n    opacity: 0;\n    transform: translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.dd-tip[_ngcontent-%COMP%] {\n  position: absolute;\n  top: -7px;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 14px;\n  height: 7px;\n  overflow: visible;\n}\n.dd-tip[_ngcontent-%COMP%]::before {\n  content: "";\n  position: absolute;\n  top: 0;\n  left: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-bottom: 7px solid var(--surface);\n  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.06));\n}\n.products-dd[_ngcontent-%COMP%]   .dd-tip[_ngcontent-%COMP%] {\n  left: 60px;\n  transform: none;\n}\n.dd-body[_ngcontent-%COMP%] {\n  padding: 8px;\n}\n.products-body[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 0;\n}\n.dd-col[_ngcontent-%COMP%] {\n  flex: 1;\n  padding: 4px;\n}\n.dd-col-right[_ngcontent-%COMP%] {\n  flex: 0 0 180px;\n  padding: 4px 8px;\n}\n.dd-divider-v[_ngcontent-%COMP%] {\n  width: 1px;\n  background: #F3F4F6;\n  margin: 8px 4px;\n  flex-shrink: 0;\n}\n.dd-section-label[_ngcontent-%COMP%] {\n  font-size: 11px;\n  font-weight: 700;\n  color: #9CA3AF;\n  text-transform: uppercase;\n  letter-spacing: 0.6px;\n  padding: 8px 12px 4px;\n  margin: 0;\n}\n.dd-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 2px 4px;\n  border-radius: 8px;\n  text-decoration: none;\n  color: #374151;\n  font-size: 13px;\n  font-weight: 500;\n  transition: background 0.12s, color 0.12s;\n  white-space: nowrap;\n}\n.dd-item[_ngcontent-%COMP%]:hover {\n  background: #F5F7FA;\n  color: #00B8A0;\n}\n.dd-item[_ngcontent-%COMP%]:hover   .dd-icon[_ngcontent-%COMP%] {\n  background: #d0f5ef;\n  color: #00B8A0;\n}\n.dd-item-all[_ngcontent-%COMP%] {\n  color: #6B7280;\n  font-weight: 500;\n}\n.dd-item-all[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n}\n.dd-item-plain[_ngcontent-%COMP%] {\n  font-size: 13.5px;\n  color: #4B5563;\n  padding: 8px 12px;\n}\n.dd-item-plain[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n  background: #F5F7FA;\n}\n.dd-icon[_ngcontent-%COMP%] {\n  width: 34px;\n  height: 34px;\n  flex-shrink: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #F0FDF9;\n  border-radius: 8px;\n  color: #00B8A0;\n  transition: background 0.12s;\n}\n.dd-icon[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  width: 18px;\n  height: 18px;\n}\n.dd-icon-lg[_ngcontent-%COMP%] {\n  width: 40px;\n  height: 40px;\n  border-radius: 10px;\n  background: none;\n}\n.dd-icon-lg[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  width: 40px;\n  height: 40px;\n}\n.dd-item-text[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.dd-item-text[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 600;\n  color: #1A1D2E;\n}\n.dd-sub[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #9CA3AF;\n  font-weight: 400;\n}\n.dd-item[_ngcontent-%COMP%]:hover   .dd-item-text[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  color: #00B8A0;\n}\n.hamburger[_ngcontent-%COMP%] {\n  display: none;\n  flex-direction: column;\n  gap: 5px;\n  background: none;\n  border: none;\n  cursor: pointer;\n  padding: 8px;\n  margin-left: auto;\n}\n.hamburger[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: var(--text);\n  border-radius: 2px;\n  transition: all var(--transition);\n}\n.hamburger.open[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:nth-child(1) {\n  transform: translateY(7px) rotate(45deg);\n}\n.hamburger.open[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:nth-child(2) {\n  opacity: 0;\n}\n.hamburger.open[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:nth-child(3) {\n  transform: translateY(-7px) rotate(-45deg);\n}\n.mobile-menu[_ngcontent-%COMP%] {\n  display: none;\n  flex-direction: column;\n  max-height: calc(100vh - 64px);\n  overflow-y: auto;\n  padding: 12px 20px 24px;\n  border-top: 1px solid var(--border);\n  background: var(--surface);\n}\n.mobile-menu.open[_ngcontent-%COMP%] {\n  display: flex;\n}\n.mm-group[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  padding: 12px 0 4px;\n  border-bottom: 1px solid var(--border);\n}\n.mm-group[_ngcontent-%COMP%]:last-of-type {\n  border-bottom: none;\n}\n.mm-label[_ngcontent-%COMP%] {\n  font-size: 11px;\n  font-weight: 700;\n  text-transform: uppercase;\n  letter-spacing: 0.7px;\n  color: #9CA3AF;\n  margin-bottom: 6px;\n  padding: 0 4px;\n}\n.mm-link[_ngcontent-%COMP%] {\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  padding: 10px 4px;\n  font-size: 15px;\n  font-weight: 500;\n  border-radius: 6px;\n  transition: color 0.15s, background 0.15s;\n  display: block;\n}\n.mm-link[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n  background: rgba(0, 184, 160, 0.05);\n}\n.mm-about[_ngcontent-%COMP%] {\n  margin-top: 12px;\n  padding: 10px 4px;\n  border-bottom: none;\n}\n.mm-actions[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  margin-top: 18px;\n  padding-top: 16px;\n  border-top: 1px solid var(--border);\n}\n.mm-theme-toggle[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 9px 14px;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 8px;\n  color: var(--text-muted);\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s;\n  white-space: nowrap;\n}\n.mm-theme-toggle[_ngcontent-%COMP%]:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n.mm-cta[_ngcontent-%COMP%] {\n  flex: 1;\n  display: block;\n  text-align: center;\n  padding: 10px 16px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: var(--radius-sm);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.mm-cta[_ngcontent-%COMP%]:hover {\n  background: var(--primary-hover);\n}\n@media (max-width: 900px) {\n  .nav-item[_ngcontent-%COMP%] {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n  .nav-plain[_ngcontent-%COMP%] {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n}\n@media (max-width: 768px) {\n  .nav-links[_ngcontent-%COMP%], \n   .nav-actions[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .hamburger[_ngcontent-%COMP%] {\n    display: flex;\n  }\n}\n/*# sourceMappingURL=navbar.component.css.map */'] });
+  }, dependencies: [CommonModule, RouterModule, RouterLink], styles: ['\n.navbar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n  background: var(--surface);\n  border-bottom: 1px solid var(--border);\n  transition: box-shadow var(--transition), background var(--transition);\n}\n.navbar.scrolled[_ngcontent-%COMP%] {\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);\n}\n.nav-inner[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  height: 64px;\n  padding: 0 32px;\n}\n.logo[_ngcontent-%COMP%] {\n  flex: 1;\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n}\n.logo-img[_ngcontent-%COMP%] {\n  height: 32px;\n  width: auto;\n  display: block;\n}\n.nav-links[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0;\n}\n.nav-item[_ngcontent-%COMP%] {\n  position: relative;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  color: var(--text-2, #374151);\n  cursor: pointer;\n  -webkit-user-select: none;\n  user-select: none;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-item[_ngcontent-%COMP%]:hover, \n.nav-item.active[_ngcontent-%COMP%] {\n  color: #00B8A0;\n}\n.nav-item.active[_ngcontent-%COMP%] {\n  background: rgba(0, 184, 160, 0.06);\n}\n.nav-label[_ngcontent-%COMP%] {\n  pointer-events: none;\n}\n.caret[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  opacity: 0.55;\n  transition: transform 0.2s, opacity 0.2s;\n}\n.caret.open[_ngcontent-%COMP%] {\n  transform: rotate(180deg);\n  opacity: 1;\n}\n.nav-item.active[_ngcontent-%COMP%]   .caret[_ngcontent-%COMP%] {\n  opacity: 1;\n}\n.nav-plain[_ngcontent-%COMP%] {\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-plain[_ngcontent-%COMP%]:hover {\n  color: var(--text, #1A1D2E);\n}\n.nav-actions[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n  gap: 10px;\n}\n.theme-toggle[_ngcontent-%COMP%] {\n  width: 36px;\n  height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 50%;\n  color: var(--text-muted);\n  cursor: pointer;\n  transition:\n    background 0.2s,\n    color 0.2s,\n    border-color 0.2s;\n  flex-shrink: 0;\n}\n.theme-toggle[_ngcontent-%COMP%]:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n.btn-start[_ngcontent-%COMP%] {\n  display: inline-block;\n  padding: 9px 20px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: var(--radius-sm);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.btn-start[_ngcontent-%COMP%]:hover {\n  background: var(--primary-hover);\n}\n.dropdown[_ngcontent-%COMP%] {\n  position: absolute;\n  top: calc(100% + 12px);\n  left: 50%;\n  transform: translateX(-50%);\n  min-width: 240px;\n  background: var(--surface);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.13);\n  z-index: 200;\n  animation: _ngcontent-%COMP%_ddFadeIn 0.15s ease;\n}\n.products-dd[_ngcontent-%COMP%] {\n  min-width: 420px;\n  left: 0;\n  transform: none;\n}\n@keyframes _ngcontent-%COMP%_ddFadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-50%) translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n  }\n}\n.products-dd[_ngcontent-%COMP%] {\n  animation: _ngcontent-%COMP%_ddFadeInLeft 0.15s ease;\n}\n@keyframes _ngcontent-%COMP%_ddFadeInLeft {\n  from {\n    opacity: 0;\n    transform: translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.dd-tip[_ngcontent-%COMP%] {\n  position: absolute;\n  top: -7px;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 14px;\n  height: 7px;\n  overflow: visible;\n}\n.dd-tip[_ngcontent-%COMP%]::before {\n  content: "";\n  position: absolute;\n  top: 0;\n  left: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-bottom: 7px solid var(--surface);\n  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.06));\n}\n.products-dd[_ngcontent-%COMP%]   .dd-tip[_ngcontent-%COMP%] {\n  left: 60px;\n  transform: none;\n}\n.dd-body[_ngcontent-%COMP%] {\n  padding: 8px;\n}\n.products-body[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 0;\n}\n.dd-col[_ngcontent-%COMP%] {\n  flex: 1;\n  padding: 4px;\n}\n.dd-col-right[_ngcontent-%COMP%] {\n  flex: 0 0 180px;\n  padding: 4px 8px;\n}\n.dd-divider-v[_ngcontent-%COMP%] {\n  width: 1px;\n  background: #F3F4F6;\n  margin: 8px 4px;\n  flex-shrink: 0;\n}\n.dd-section-label[_ngcontent-%COMP%] {\n  font-size: 11px;\n  font-weight: 700;\n  color: #9CA3AF;\n  text-transform: uppercase;\n  letter-spacing: 0.6px;\n  padding: 8px 12px 4px;\n  margin: 0;\n}\n.dd-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 2px 4px;\n  border-radius: 8px;\n  text-decoration: none;\n  color: #374151;\n  font-size: 13px;\n  font-weight: 500;\n  transition: background 0.12s, color 0.12s;\n  white-space: nowrap;\n}\n.dd-item[_ngcontent-%COMP%]:hover {\n  background: #F5F7FA;\n  color: #00B8A0;\n}\n.dd-item[_ngcontent-%COMP%]:hover   .dd-icon[_ngcontent-%COMP%] {\n  background: #d0f5ef;\n  color: #00B8A0;\n}\n.dd-item-all[_ngcontent-%COMP%] {\n  color: #6B7280;\n  font-weight: 500;\n}\n.dd-item-all[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n}\n.dd-item-plain[_ngcontent-%COMP%] {\n  font-size: 13.5px;\n  color: #4B5563;\n  padding: 8px 12px;\n}\n.dd-item-plain[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n  background: #F5F7FA;\n}\n.dd-icon[_ngcontent-%COMP%] {\n  width: 34px;\n  height: 34px;\n  flex-shrink: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #F0FDF9;\n  border-radius: 8px;\n  color: #00B8A0;\n  transition: background 0.12s;\n}\n.dd-icon[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  width: 18px;\n  height: 18px;\n}\n.dd-icon-lg[_ngcontent-%COMP%] {\n  width: 40px;\n  height: 40px;\n  border-radius: 10px;\n  background: none;\n}\n.dd-icon-lg[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  width: 40px;\n  height: 40px;\n}\n.dd-item-text[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.dd-item-text[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 600;\n  color: #1A1D2E;\n}\n.dd-sub[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #9CA3AF;\n  font-weight: 400;\n}\n.dd-item[_ngcontent-%COMP%]:hover   .dd-item-text[_ngcontent-%COMP%]   strong[_ngcontent-%COMP%] {\n  color: #00B8A0;\n}\n.hamburger[_ngcontent-%COMP%] {\n  display: none;\n  flex-direction: column;\n  gap: 5px;\n  background: none;\n  border: none;\n  cursor: pointer;\n  padding: 8px;\n  margin-left: auto;\n}\n.hamburger[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: var(--text);\n  border-radius: 2px;\n  transition: all var(--transition);\n}\n.hamburger.open[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:nth-child(1) {\n  transform: translateY(7px) rotate(45deg);\n}\n.hamburger.open[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:nth-child(2) {\n  opacity: 0;\n}\n.hamburger.open[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]:nth-child(3) {\n  transform: translateY(-7px) rotate(-45deg);\n}\n.mobile-menu[_ngcontent-%COMP%] {\n  display: none;\n  flex-direction: column;\n  max-height: calc(100vh - 64px);\n  overflow-y: auto;\n  padding: 16px 20px 28px;\n  border-top: 1px solid var(--border);\n  background: var(--surface);\n}\n.mobile-menu.open[_ngcontent-%COMP%] {\n  display: flex;\n}\n.mm-cta-top[_ngcontent-%COMP%] {\n  display: block;\n  text-align: center;\n  padding: 13px;\n  margin-bottom: 8px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: 10px;\n  font-size: 14px;\n  font-weight: 700;\n  letter-spacing: 0.8px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.mm-cta-top[_ngcontent-%COMP%]:hover {\n  background: var(--primary-hover);\n}\n.mm-section[_ngcontent-%COMP%] {\n  border-bottom: 1px solid var(--border);\n}\n.mm-header[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n  padding: 16px 4px;\n  background: none;\n  border: none;\n  font-size: 16px;\n  font-weight: 500;\n  color: var(--text-2, #374151);\n  cursor: pointer;\n  text-align: left;\n  transition: color 0.15s;\n}\n.mm-header.active[_ngcontent-%COMP%], \n.mm-header[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n}\n.mm-chevron[_ngcontent-%COMP%] {\n  flex-shrink: 0;\n  transition: transform 0.2s;\n  color: #9CA3AF;\n}\n.mm-chevron.open[_ngcontent-%COMP%] {\n  transform: rotate(180deg);\n  color: #00B8A0;\n}\n.mm-header.active[_ngcontent-%COMP%]   .mm-chevron[_ngcontent-%COMP%] {\n  color: #00B8A0;\n}\n.mm-items[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  padding: 0 4px 12px;\n  gap: 2px;\n}\n.mm-link[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  padding: 10px 10px;\n  border-radius: 8px;\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  font-size: 15px;\n  font-weight: 500;\n  transition: color 0.15s, background 0.15s;\n}\n.mm-link[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n  background: rgba(0, 184, 160, 0.06);\n}\n.mm-icon[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  flex-shrink: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #F0FDF9;\n  border-radius: 7px;\n  color: #00B8A0;\n}\n.mm-icon[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  width: 16px;\n  height: 16px;\n}\n.mm-icon-badge[_ngcontent-%COMP%] {\n  font-size: 13px;\n  font-weight: 700;\n  color: #00B8A0;\n  background: #E8FBF8;\n  border-radius: 7px;\n}\n.mm-standalone[_ngcontent-%COMP%] {\n  display: block;\n  padding: 16px 4px;\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  font-size: 16px;\n  font-weight: 500;\n  border-bottom: 1px solid var(--border);\n  transition: color 0.15s;\n}\n.mm-standalone[_ngcontent-%COMP%]:hover {\n  color: #00B8A0;\n}\n.mm-actions[_ngcontent-%COMP%] {\n  display: flex;\n  margin-top: 20px;\n}\n.mm-theme-toggle[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  padding: 10px 16px;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 8px;\n  color: var(--text-muted);\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s;\n  width: 100%;\n  justify-content: center;\n}\n.mm-theme-toggle[_ngcontent-%COMP%]:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n@media (max-width: 900px) {\n  .nav-item[_ngcontent-%COMP%] {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n  .nav-plain[_ngcontent-%COMP%] {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n}\n@media (max-width: 768px) {\n  .nav-links[_ngcontent-%COMP%], \n   .nav-actions[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .hamburger[_ngcontent-%COMP%] {\n    display: flex;\n  }\n}\n/*# sourceMappingURL=navbar.component.css.map */'] });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NavbarComponent, [{
@@ -957,44 +1205,140 @@ var NavbarComponent = class _NavbarComponent {
   <!-- Mobile Menu -->
   <div class="mobile-menu" [class.open]="mobileOpen()" role="navigation">
 
-    <div class="mm-group">
-      <span class="mm-label">Products</span>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Forex</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Indices</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Commodities</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Shares</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Crypto CFDs</a>
+    <!-- Top CTA -->
+    <a routerLink="/register" (click)="closeMobile()" class="mm-cta-top">START TRADING</a>
+
+    <!-- Products -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'products'" (click)="toggleMobileSection('products')">
+        <span>Products</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'products'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'products') {
+        <div class="mm-items">
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="12" width="3" height="9" rx="1"/><rect x="10.5" y="6" width="3" height="15" rx="1"/><rect x="18" y="3" width="3" height="18" rx="1"/></svg></span>
+            Forex
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+            Indices
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 7 5 10.5 5 14a7 7 0 0 0 14 0c0-3.5-3-7-7-12z"/></svg></span>
+            Commodities
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg></span>
+            Shares
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v2m0 8v2M9.5 9.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 2.5-5 2.5-5 5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5"/></svg></span>
+            Crypto CFDs
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></span>
+            Gold Option CFDs
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Platforms</span>
-      <a routerLink="/platforms/metatrader-4" (click)="closeMobile()" class="mm-link">MetaTrader 4</a>
-      <a href="#"                             (click)="closeMobile()" class="mm-link">MetaTrader 5</a>
+    <!-- Platforms -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'platforms'" (click)="toggleMobileSection('platforms')">
+        <span>Platforms</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'platforms'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'platforms') {
+        <div class="mm-items">
+          <a routerLink="/platforms/metatrader-4" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon mm-icon-badge">4</span>
+            MetaTrader 4
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon mm-icon-badge">5</span>
+            MetaTrader 5
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Accounts</span>
-      <a routerLink="/accounts" (click)="closeMobile()" class="mm-link">Trading Accounts</a>
-      <a href="#"               (click)="closeMobile()" class="mm-link">Copy Trading</a>
-      <a href="#"               (click)="closeMobile()" class="mm-link">Demo Account</a>
+    <!-- Accounts -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'accounts'" (click)="toggleMobileSection('accounts')">
+        <span>Accounts</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'accounts'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'accounts') {
+        <div class="mm-items">
+          <a routerLink="/accounts" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
+            Trading Accounts
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></span>
+            Copy Trading
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9" stroke-dasharray="4 2"/></svg></span>
+            Demo Account
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Insights</span>
-      <a routerLink="/dashboard"     (click)="closeMobile()" class="mm-link">Live Dashboard</a>
-      <a routerLink="/trading-tools" (click)="closeMobile()" class="mm-link">Trading Tools</a>
-      <a href="#"                    (click)="closeMobile()" class="mm-link">Education</a>
-      <a href="#"                    (click)="closeMobile()" class="mm-link">News</a>
+    <!-- Insights -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'insights'" (click)="toggleMobileSection('insights')">
+        <span>Insights</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'insights'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'insights') {
+        <div class="mm-items">
+          <a routerLink="/dashboard" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+            Live Dashboard
+          </a>
+          <a routerLink="/trading-tools" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+            Trading Tools
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+            Education
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/></svg></span>
+            News
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Partners</span>
-      <a href="#" (click)="closeMobile()" class="mm-link">Partnerships</a>
-      <a href="#" (click)="closeMobile()" class="mm-link">Refer a Friend</a>
+    <!-- Partners -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'partners'" (click)="toggleMobileSection('partners')">
+        <span>Partners</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'partners'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'partners') {
+        <div class="mm-items">
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            Partnerships
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></span>
+            Refer a Friend
+          </a>
+        </div>
+      }
     </div>
 
-    <a href="#" (click)="closeMobile()" class="mm-link mm-about">About us</a>
+    <a href="#" (click)="closeMobile()" class="mm-standalone">About us</a>
 
+    <!-- Theme toggle -->
     <div class="mm-actions">
       <button class="mm-theme-toggle" (click)="theme.toggle(); $event.stopPropagation()">
         @if (theme.isDark()) {
@@ -1005,13 +1349,12 @@ var NavbarComponent = class _NavbarComponent {
           Dark Mode
         }
       </button>
-      <a routerLink="/register" (click)="closeMobile()" class="mm-cta">START TRADING</a>
     </div>
 
   </div>
 </header>
-`, styles: ['/* src/app/shared/components/navbar/navbar.component.css */\n.navbar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n  background: var(--surface);\n  border-bottom: 1px solid var(--border);\n  transition: box-shadow var(--transition), background var(--transition);\n}\n.navbar.scrolled {\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);\n}\n.nav-inner {\n  display: flex;\n  align-items: center;\n  height: 64px;\n  padding: 0 32px;\n}\n.logo {\n  flex: 1;\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n}\n.logo-img {\n  height: 32px;\n  width: auto;\n  display: block;\n}\n.nav-links {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0;\n}\n.nav-item {\n  position: relative;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  color: var(--text-2, #374151);\n  cursor: pointer;\n  -webkit-user-select: none;\n  user-select: none;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-item:hover,\n.nav-item.active {\n  color: #00B8A0;\n}\n.nav-item.active {\n  background: rgba(0, 184, 160, 0.06);\n}\n.nav-label {\n  pointer-events: none;\n}\n.caret {\n  display: flex;\n  align-items: center;\n  opacity: 0.55;\n  transition: transform 0.2s, opacity 0.2s;\n}\n.caret.open {\n  transform: rotate(180deg);\n  opacity: 1;\n}\n.nav-item.active .caret {\n  opacity: 1;\n}\n.nav-plain {\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-plain:hover {\n  color: var(--text, #1A1D2E);\n}\n.nav-actions {\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n  gap: 10px;\n}\n.theme-toggle {\n  width: 36px;\n  height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 50%;\n  color: var(--text-muted);\n  cursor: pointer;\n  transition:\n    background 0.2s,\n    color 0.2s,\n    border-color 0.2s;\n  flex-shrink: 0;\n}\n.theme-toggle:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n.btn-start {\n  display: inline-block;\n  padding: 9px 20px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: var(--radius-sm);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.btn-start:hover {\n  background: var(--primary-hover);\n}\n.dropdown {\n  position: absolute;\n  top: calc(100% + 12px);\n  left: 50%;\n  transform: translateX(-50%);\n  min-width: 240px;\n  background: var(--surface);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.13);\n  z-index: 200;\n  animation: ddFadeIn 0.15s ease;\n}\n.products-dd {\n  min-width: 420px;\n  left: 0;\n  transform: none;\n}\n@keyframes ddFadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-50%) translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n  }\n}\n.products-dd {\n  animation: ddFadeInLeft 0.15s ease;\n}\n@keyframes ddFadeInLeft {\n  from {\n    opacity: 0;\n    transform: translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.dd-tip {\n  position: absolute;\n  top: -7px;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 14px;\n  height: 7px;\n  overflow: visible;\n}\n.dd-tip::before {\n  content: "";\n  position: absolute;\n  top: 0;\n  left: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-bottom: 7px solid var(--surface);\n  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.06));\n}\n.products-dd .dd-tip {\n  left: 60px;\n  transform: none;\n}\n.dd-body {\n  padding: 8px;\n}\n.products-body {\n  display: flex;\n  gap: 0;\n}\n.dd-col {\n  flex: 1;\n  padding: 4px;\n}\n.dd-col-right {\n  flex: 0 0 180px;\n  padding: 4px 8px;\n}\n.dd-divider-v {\n  width: 1px;\n  background: #F3F4F6;\n  margin: 8px 4px;\n  flex-shrink: 0;\n}\n.dd-section-label {\n  font-size: 11px;\n  font-weight: 700;\n  color: #9CA3AF;\n  text-transform: uppercase;\n  letter-spacing: 0.6px;\n  padding: 8px 12px 4px;\n  margin: 0;\n}\n.dd-item {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 2px 4px;\n  border-radius: 8px;\n  text-decoration: none;\n  color: #374151;\n  font-size: 13px;\n  font-weight: 500;\n  transition: background 0.12s, color 0.12s;\n  white-space: nowrap;\n}\n.dd-item:hover {\n  background: #F5F7FA;\n  color: #00B8A0;\n}\n.dd-item:hover .dd-icon {\n  background: #d0f5ef;\n  color: #00B8A0;\n}\n.dd-item-all {\n  color: #6B7280;\n  font-weight: 500;\n}\n.dd-item-all:hover {\n  color: #00B8A0;\n}\n.dd-item-plain {\n  font-size: 13.5px;\n  color: #4B5563;\n  padding: 8px 12px;\n}\n.dd-item-plain:hover {\n  color: #00B8A0;\n  background: #F5F7FA;\n}\n.dd-icon {\n  width: 34px;\n  height: 34px;\n  flex-shrink: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #F0FDF9;\n  border-radius: 8px;\n  color: #00B8A0;\n  transition: background 0.12s;\n}\n.dd-icon svg {\n  width: 18px;\n  height: 18px;\n}\n.dd-icon-lg {\n  width: 40px;\n  height: 40px;\n  border-radius: 10px;\n  background: none;\n}\n.dd-icon-lg svg {\n  width: 40px;\n  height: 40px;\n}\n.dd-item-text {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.dd-item-text strong {\n  font-size: 14px;\n  font-weight: 600;\n  color: #1A1D2E;\n}\n.dd-sub {\n  font-size: 12px;\n  color: #9CA3AF;\n  font-weight: 400;\n}\n.dd-item:hover .dd-item-text strong {\n  color: #00B8A0;\n}\n.hamburger {\n  display: none;\n  flex-direction: column;\n  gap: 5px;\n  background: none;\n  border: none;\n  cursor: pointer;\n  padding: 8px;\n  margin-left: auto;\n}\n.hamburger span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: var(--text);\n  border-radius: 2px;\n  transition: all var(--transition);\n}\n.hamburger.open span:nth-child(1) {\n  transform: translateY(7px) rotate(45deg);\n}\n.hamburger.open span:nth-child(2) {\n  opacity: 0;\n}\n.hamburger.open span:nth-child(3) {\n  transform: translateY(-7px) rotate(-45deg);\n}\n.mobile-menu {\n  display: none;\n  flex-direction: column;\n  max-height: calc(100vh - 64px);\n  overflow-y: auto;\n  padding: 12px 20px 24px;\n  border-top: 1px solid var(--border);\n  background: var(--surface);\n}\n.mobile-menu.open {\n  display: flex;\n}\n.mm-group {\n  display: flex;\n  flex-direction: column;\n  padding: 12px 0 4px;\n  border-bottom: 1px solid var(--border);\n}\n.mm-group:last-of-type {\n  border-bottom: none;\n}\n.mm-label {\n  font-size: 11px;\n  font-weight: 700;\n  text-transform: uppercase;\n  letter-spacing: 0.7px;\n  color: #9CA3AF;\n  margin-bottom: 6px;\n  padding: 0 4px;\n}\n.mm-link {\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  padding: 10px 4px;\n  font-size: 15px;\n  font-weight: 500;\n  border-radius: 6px;\n  transition: color 0.15s, background 0.15s;\n  display: block;\n}\n.mm-link:hover {\n  color: #00B8A0;\n  background: rgba(0, 184, 160, 0.05);\n}\n.mm-about {\n  margin-top: 12px;\n  padding: 10px 4px;\n  border-bottom: none;\n}\n.mm-actions {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  margin-top: 18px;\n  padding-top: 16px;\n  border-top: 1px solid var(--border);\n}\n.mm-theme-toggle {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  padding: 9px 14px;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 8px;\n  color: var(--text-muted);\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s;\n  white-space: nowrap;\n}\n.mm-theme-toggle:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n.mm-cta {\n  flex: 1;\n  display: block;\n  text-align: center;\n  padding: 10px 16px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: var(--radius-sm);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.mm-cta:hover {\n  background: var(--primary-hover);\n}\n@media (max-width: 900px) {\n  .nav-item {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n  .nav-plain {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n}\n@media (max-width: 768px) {\n  .nav-links,\n  .nav-actions {\n    display: none;\n  }\n  .hamburger {\n    display: flex;\n  }\n}\n/*# sourceMappingURL=navbar.component.css.map */\n'] }]
-  }], () => [{ type: ElementRef }], { onScroll: [{
+`, styles: ['/* src/app/shared/components/navbar/navbar.component.css */\n.navbar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1000;\n  background: var(--surface);\n  border-bottom: 1px solid var(--border);\n  transition: box-shadow var(--transition), background var(--transition);\n}\n.navbar.scrolled {\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);\n}\n.nav-inner {\n  display: flex;\n  align-items: center;\n  height: 64px;\n  padding: 0 32px;\n}\n.logo {\n  flex: 1;\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n}\n.logo-img {\n  height: 32px;\n  width: auto;\n  display: block;\n}\n.nav-links {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0;\n}\n.nav-item {\n  position: relative;\n  display: flex;\n  align-items: center;\n  gap: 4px;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  color: var(--text-2, #374151);\n  cursor: pointer;\n  -webkit-user-select: none;\n  user-select: none;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-item:hover,\n.nav-item.active {\n  color: #00B8A0;\n}\n.nav-item.active {\n  background: rgba(0, 184, 160, 0.06);\n}\n.nav-label {\n  pointer-events: none;\n}\n.caret {\n  display: flex;\n  align-items: center;\n  opacity: 0.55;\n  transition: transform 0.2s, opacity 0.2s;\n}\n.caret.open {\n  transform: rotate(180deg);\n  opacity: 1;\n}\n.nav-item.active .caret {\n  opacity: 1;\n}\n.nav-plain {\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  padding: 8px 13px;\n  border-radius: 6px;\n  font-size: 14px;\n  font-weight: 500;\n  transition: color 0.15s;\n  white-space: nowrap;\n}\n.nav-plain:hover {\n  color: var(--text, #1A1D2E);\n}\n.nav-actions {\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: flex-end;\n  gap: 10px;\n}\n.theme-toggle {\n  width: 36px;\n  height: 36px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 50%;\n  color: var(--text-muted);\n  cursor: pointer;\n  transition:\n    background 0.2s,\n    color 0.2s,\n    border-color 0.2s;\n  flex-shrink: 0;\n}\n.theme-toggle:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n.btn-start {\n  display: inline-block;\n  padding: 9px 20px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: var(--radius-sm);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.5px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.btn-start:hover {\n  background: var(--primary-hover);\n}\n.dropdown {\n  position: absolute;\n  top: calc(100% + 12px);\n  left: 50%;\n  transform: translateX(-50%);\n  min-width: 240px;\n  background: var(--surface);\n  border: 1px solid var(--border);\n  border-radius: 12px;\n  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.13);\n  z-index: 200;\n  animation: ddFadeIn 0.15s ease;\n}\n.products-dd {\n  min-width: 420px;\n  left: 0;\n  transform: none;\n}\n@keyframes ddFadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-50%) translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%) translateY(0);\n  }\n}\n.products-dd {\n  animation: ddFadeInLeft 0.15s ease;\n}\n@keyframes ddFadeInLeft {\n  from {\n    opacity: 0;\n    transform: translateY(-6px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n.dd-tip {\n  position: absolute;\n  top: -7px;\n  left: 50%;\n  transform: translateX(-50%);\n  width: 14px;\n  height: 7px;\n  overflow: visible;\n}\n.dd-tip::before {\n  content: "";\n  position: absolute;\n  top: 0;\n  left: 0;\n  border-left: 7px solid transparent;\n  border-right: 7px solid transparent;\n  border-bottom: 7px solid var(--surface);\n  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.06));\n}\n.products-dd .dd-tip {\n  left: 60px;\n  transform: none;\n}\n.dd-body {\n  padding: 8px;\n}\n.products-body {\n  display: flex;\n  gap: 0;\n}\n.dd-col {\n  flex: 1;\n  padding: 4px;\n}\n.dd-col-right {\n  flex: 0 0 180px;\n  padding: 4px 8px;\n}\n.dd-divider-v {\n  width: 1px;\n  background: #F3F4F6;\n  margin: 8px 4px;\n  flex-shrink: 0;\n}\n.dd-section-label {\n  font-size: 11px;\n  font-weight: 700;\n  color: #9CA3AF;\n  text-transform: uppercase;\n  letter-spacing: 0.6px;\n  padding: 8px 12px 4px;\n  margin: 0;\n}\n.dd-item {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  padding: 2px 4px;\n  border-radius: 8px;\n  text-decoration: none;\n  color: #374151;\n  font-size: 13px;\n  font-weight: 500;\n  transition: background 0.12s, color 0.12s;\n  white-space: nowrap;\n}\n.dd-item:hover {\n  background: #F5F7FA;\n  color: #00B8A0;\n}\n.dd-item:hover .dd-icon {\n  background: #d0f5ef;\n  color: #00B8A0;\n}\n.dd-item-all {\n  color: #6B7280;\n  font-weight: 500;\n}\n.dd-item-all:hover {\n  color: #00B8A0;\n}\n.dd-item-plain {\n  font-size: 13.5px;\n  color: #4B5563;\n  padding: 8px 12px;\n}\n.dd-item-plain:hover {\n  color: #00B8A0;\n  background: #F5F7FA;\n}\n.dd-icon {\n  width: 34px;\n  height: 34px;\n  flex-shrink: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #F0FDF9;\n  border-radius: 8px;\n  color: #00B8A0;\n  transition: background 0.12s;\n}\n.dd-icon svg {\n  width: 18px;\n  height: 18px;\n}\n.dd-icon-lg {\n  width: 40px;\n  height: 40px;\n  border-radius: 10px;\n  background: none;\n}\n.dd-icon-lg svg {\n  width: 40px;\n  height: 40px;\n}\n.dd-item-text {\n  display: flex;\n  flex-direction: column;\n  gap: 1px;\n}\n.dd-item-text strong {\n  font-size: 14px;\n  font-weight: 600;\n  color: #1A1D2E;\n}\n.dd-sub {\n  font-size: 12px;\n  color: #9CA3AF;\n  font-weight: 400;\n}\n.dd-item:hover .dd-item-text strong {\n  color: #00B8A0;\n}\n.hamburger {\n  display: none;\n  flex-direction: column;\n  gap: 5px;\n  background: none;\n  border: none;\n  cursor: pointer;\n  padding: 8px;\n  margin-left: auto;\n}\n.hamburger span {\n  display: block;\n  width: 22px;\n  height: 2px;\n  background: var(--text);\n  border-radius: 2px;\n  transition: all var(--transition);\n}\n.hamburger.open span:nth-child(1) {\n  transform: translateY(7px) rotate(45deg);\n}\n.hamburger.open span:nth-child(2) {\n  opacity: 0;\n}\n.hamburger.open span:nth-child(3) {\n  transform: translateY(-7px) rotate(-45deg);\n}\n.mobile-menu {\n  display: none;\n  flex-direction: column;\n  max-height: calc(100vh - 64px);\n  overflow-y: auto;\n  padding: 16px 20px 28px;\n  border-top: 1px solid var(--border);\n  background: var(--surface);\n}\n.mobile-menu.open {\n  display: flex;\n}\n.mm-cta-top {\n  display: block;\n  text-align: center;\n  padding: 13px;\n  margin-bottom: 8px;\n  background: var(--primary);\n  color: #fff;\n  border-radius: 10px;\n  font-size: 14px;\n  font-weight: 700;\n  letter-spacing: 0.8px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: background var(--transition);\n}\n.mm-cta-top:hover {\n  background: var(--primary-hover);\n}\n.mm-section {\n  border-bottom: 1px solid var(--border);\n}\n.mm-header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n  padding: 16px 4px;\n  background: none;\n  border: none;\n  font-size: 16px;\n  font-weight: 500;\n  color: var(--text-2, #374151);\n  cursor: pointer;\n  text-align: left;\n  transition: color 0.15s;\n}\n.mm-header.active,\n.mm-header:hover {\n  color: #00B8A0;\n}\n.mm-chevron {\n  flex-shrink: 0;\n  transition: transform 0.2s;\n  color: #9CA3AF;\n}\n.mm-chevron.open {\n  transform: rotate(180deg);\n  color: #00B8A0;\n}\n.mm-header.active .mm-chevron {\n  color: #00B8A0;\n}\n.mm-items {\n  display: flex;\n  flex-direction: column;\n  padding: 0 4px 12px;\n  gap: 2px;\n}\n.mm-link {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  padding: 10px 10px;\n  border-radius: 8px;\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  font-size: 15px;\n  font-weight: 500;\n  transition: color 0.15s, background 0.15s;\n}\n.mm-link:hover {\n  color: #00B8A0;\n  background: rgba(0, 184, 160, 0.06);\n}\n.mm-icon {\n  width: 30px;\n  height: 30px;\n  flex-shrink: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #F0FDF9;\n  border-radius: 7px;\n  color: #00B8A0;\n}\n.mm-icon svg {\n  width: 16px;\n  height: 16px;\n}\n.mm-icon-badge {\n  font-size: 13px;\n  font-weight: 700;\n  color: #00B8A0;\n  background: #E8FBF8;\n  border-radius: 7px;\n}\n.mm-standalone {\n  display: block;\n  padding: 16px 4px;\n  color: var(--text-2, #374151);\n  text-decoration: none;\n  font-size: 16px;\n  font-weight: 500;\n  border-bottom: 1px solid var(--border);\n  transition: color 0.15s;\n}\n.mm-standalone:hover {\n  color: #00B8A0;\n}\n.mm-actions {\n  display: flex;\n  margin-top: 20px;\n}\n.mm-theme-toggle {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  padding: 10px 16px;\n  background: var(--bg);\n  border: 1px solid var(--border);\n  border-radius: 8px;\n  color: var(--text-muted);\n  font-size: 13px;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s;\n  width: 100%;\n  justify-content: center;\n}\n.mm-theme-toggle:hover {\n  background: var(--primary-light);\n  color: var(--primary);\n  border-color: var(--primary);\n}\n@media (max-width: 900px) {\n  .nav-item {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n  .nav-plain {\n    padding: 8px 9px;\n    font-size: 13px;\n  }\n}\n@media (max-width: 768px) {\n  .nav-links,\n  .nav-actions {\n    display: none;\n  }\n  .hamburger {\n    display: flex;\n  }\n}\n/*# sourceMappingURL=navbar.component.css.map */\n'] }]
+  }], () => [], { onScroll: [{
     type: HostListener,
     args: ["window:scroll"]
   }], onDocClick: [{
