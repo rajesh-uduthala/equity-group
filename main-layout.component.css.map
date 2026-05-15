@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["angular:styles/component:css;045eaeeea00db38ad9476b6f99f84ddaa9054d59bfec33a5f9312c503363a8a2;/Users/rajesh/Downloads/equity-group/src/app/layouts/main-layout/main-layout.component.ts"],
-  "sourcesContent": [".main-content { margin-top: 64px; }"],
-  "mappings": ";AAAA,CAAC;AAAe,cAAY;AAAM;",
-  "names": []
-}

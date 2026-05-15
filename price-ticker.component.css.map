@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["angular:styles/component:css;6d04918a8349f8f47d53d1c540d543f3ac458e913f0de7d152c1a86740458a10;/Users/rajesh/Downloads/equity-group/src/app/shared/components/price-ticker/price-ticker.component.ts"],
-  "sourcesContent": ["\n    .ticker-wrap {\n      background: var(--dark-2); border-bottom: 1px solid var(--border);\n      padding: 8px 0; overflow: hidden;\n    }\n    .ticker-track {\n      display: flex; gap: 40px; width: max-content;\n      animation: ticker-scroll 35s linear infinite;\n    }\n    .ticker-track:hover { animation-play-state: paused; }\n    .tick {\n      display: inline-flex; align-items: center; gap: 8px;\n      font-size: 12px; font-family: var(--mono); white-space: nowrap;\n      color: var(--text-muted);\n    }\n    .tick-symbol { color: var(--text-dim); font-weight: 500; }\n    .tick-price  { color: var(--text); }\n    .tick.up  .tick-change { color: var(--up);   font-style: normal; }\n    .tick.down .tick-change { color: var(--down); font-style: normal; }\n  "],
-  "mappings": ";AACI,CAAC;AACC,cAAY,IAAI;AAAW,iBAAe,IAAI,MAAM,IAAI;AACxD,WAAS,IAAI;AAAG,YAAU;AAC5B;AACA,CAAC;AACC,WAAS;AAAM,OAAK;AAAM,SAAO;AACjC,aAAW,cAAc,IAAI,OAAO;AACtC;AACA,CAJC,YAIY;AAAS,wBAAsB;AAAQ;AACpD,CAAC;AACC,WAAS;AAAa,eAAa;AAAQ,OAAK;AAChD,aAAW;AAAM,eAAa,IAAI;AAAS,eAAa;AACxD,SAAO,IAAI;AACb;AACA,CAAC;AAAc,SAAO,IAAI;AAAa,eAAa;AAAK;AACzD,CAAC;AAAc,SAAO,IAAI;AAAS;AACnC,CAPC,IAOI,CAAC,GAAI,CAAC;AAAc,SAAO,IAAI;AAAS,cAAY;AAAQ;AACjE,CARC,IAQI,CAAC,KAAK,CADA;AACe,SAAO,IAAI;AAAS,cAAY;AAAQ;",
-  "names": []
-}
