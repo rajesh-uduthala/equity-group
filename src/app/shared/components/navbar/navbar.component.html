@@ -1,0 +1,229 @@
+<header class="navbar" [class.scrolled]="scrolled()">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a routerLink="/" class="logo" (click)="closeMobile()">
+      <img src="https://eq-cdn.equiti-me.com/website/documents/equiti-company-logo.svg"
+           alt="Equiti" class="logo-img" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-links" aria-label="Main navigation">
+
+      <!-- Products -->
+      <div class="nav-item" [class.active]="activeMenu() === 'products'" (click)="toggleMenu('products', $event)">
+        <span class="nav-label">Products</span>
+        <span class="caret" [class.open]="activeMenu() === 'products'">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        @if (activeMenu() === 'products') {
+          <div class="dropdown products-dd" (click)="$event.stopPropagation()">
+            <div class="dd-tip"></div>
+            <div class="dd-body products-body">
+              <div class="dd-col">
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="12" width="3" height="9" rx="1"/><rect x="10.5" y="6" width="3" height="15" rx="1"/><rect x="18" y="3" width="3" height="18" rx="1"/><line x1="4.5" y1="8" x2="4.5" y2="11"/><line x1="12" y1="2" x2="12" y2="5"/></svg></span>
+                  Forex
+                </a>
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+                  Indices
+                </a>
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 7 5 10.5 5 14a7 7 0 0 0 14 0c0-3.5-3-7-7-12z"/></svg></span>
+                  Commodities
+                </a>
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg></span>
+                  Shares
+                </a>
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 16l5-12 5 12M9.5 10.5h5"/><path d="M3 20h18"/></svg></span>
+                  ETFs
+                </a>
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v2m0 8v2M9.5 9.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 2.5-5 2.5-5 5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5"/></svg></span>
+                  Crypto CFDs
+                </a>
+                <a href="#" class="dd-item">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></span>
+                  Gold Option CFDs
+                </a>
+                <a href="#" class="dd-item dd-item-all">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+                  All products
+                </a>
+              </div>
+              <div class="dd-divider-v"></div>
+              <div class="dd-col dd-col-right">
+                <p class="dd-section-label">Trading info</p>
+                <a href="#" class="dd-item dd-item-plain">Deposits &amp; withdrawals</a>
+                <a href="#" class="dd-item dd-item-plain">Financing fees</a>
+                <a href="#" class="dd-item dd-item-plain">Expiry dates</a>
+                <a href="#" class="dd-item dd-item-plain">Holiday hours</a>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Platforms -->
+      <div class="nav-item" [class.active]="activeMenu() === 'platforms'" (click)="toggleMenu('platforms', $event)">
+        <span class="nav-label">Platforms</span>
+        <span class="caret" [class.open]="activeMenu() === 'platforms'">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        @if (activeMenu() === 'platforms') {
+          <div class="dropdown" (click)="$event.stopPropagation()">
+            <div class="dd-tip"></div>
+            <div class="dd-body">
+              <a routerLink="/platforms/metatrader-4" class="dd-item" (click)="activeMenu.set(null)">
+                <span class="dd-icon dd-icon-lg">
+                  <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#E8FBF8"/><text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#00B8A0">4</text></svg>
+                </span>
+                <span class="dd-item-text"><strong>MetaTrader 4</strong><span class="dd-sub">Industry-leading platform</span></span>
+              </a>
+              <a href="#" class="dd-item">
+                <span class="dd-icon dd-icon-lg">
+                  <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#E8FBF8"/><text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#00B8A0">5</text></svg>
+                </span>
+                <span class="dd-item-text"><strong>MetaTrader 5</strong><span class="dd-sub">Next generation platform</span></span>
+              </a>
+              <a href="#" class="dd-item dd-item-all">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+                All platforms
+              </a>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Accounts -->
+      <div class="nav-item" [class.active]="activeMenu() === 'accounts'" (click)="toggleMenu('accounts', $event)">
+        <span class="nav-label">Accounts</span>
+        <span class="caret" [class.open]="activeMenu() === 'accounts'">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        @if (activeMenu() === 'accounts') {
+          <div class="dropdown" (click)="$event.stopPropagation()">
+            <div class="dd-tip"></div>
+            <div class="dd-body">
+              <a routerLink="/accounts" class="dd-item" (click)="activeMenu.set(null)">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
+                <span class="dd-item-text"><strong>Trading accounts</strong><span class="dd-sub">Explore account types</span></span>
+              </a>
+              <a href="#" class="dd-item">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></span>
+                <span class="dd-item-text"><strong>Copy trading</strong><span class="dd-sub">Follow expert traders</span></span>
+              </a>
+              <a href="#" class="dd-item">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9" stroke-dasharray="4 2"/></svg></span>
+                <span class="dd-item-text"><strong>Demo</strong><span class="dd-sub">Practice risk-free</span></span>
+              </a>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Insights -->
+      <div class="nav-item" [class.active]="activeMenu() === 'insights'" (click)="toggleMenu('insights', $event)">
+        <span class="nav-label">Insights</span>
+        <span class="caret" [class.open]="activeMenu() === 'insights'">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        @if (activeMenu() === 'insights') {
+          <div class="dropdown" (click)="$event.stopPropagation()">
+            <div class="dd-tip"></div>
+            <div class="dd-body">
+              <a routerLink="/dashboard" class="dd-item" (click)="activeMenu.set(null)">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+                <span class="dd-item-text"><strong>Live Dashboard</strong><span class="dd-sub">Real-time prices &amp; tools</span></span>
+              </a>
+              <a routerLink="/trading-tools" class="dd-item" (click)="activeMenu.set(null)">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+                <span class="dd-item-text"><strong>Trading tools</strong><span class="dd-sub">Charts, signals & more</span></span>
+              </a>
+              <a href="#" class="dd-item">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <span class="dd-item-text"><strong>Education</strong><span class="dd-sub">Learn to trade smarter</span></span>
+              </a>
+              <a href="#" class="dd-item">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg></span>
+                <span class="dd-item-text"><strong>News</strong><span class="dd-sub">Market updates daily</span></span>
+              </a>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Partners -->
+      <div class="nav-item" [class.active]="activeMenu() === 'partners'" (click)="toggleMenu('partners', $event)">
+        <span class="nav-label">Partners</span>
+        <span class="caret" [class.open]="activeMenu() === 'partners'">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        @if (activeMenu() === 'partners') {
+          <div class="dropdown" (click)="$event.stopPropagation()">
+            <div class="dd-tip"></div>
+            <div class="dd-body">
+              <a href="#" class="dd-item">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <span class="dd-item-text"><strong>Partnerships</strong><span class="dd-sub">Grow with Equiti</span></span>
+              </a>
+              <a href="#" class="dd-item">
+                <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></span>
+                <span class="dd-item-text"><strong>Refer a friend</strong><span class="dd-sub">Earn rewards together</span></span>
+              </a>
+            </div>
+          </div>
+        }
+      </div>
+
+      <a href="#" class="nav-plain">About us</a>
+
+    </nav>
+
+    <!-- CTA -->
+    <div class="nav-actions">
+      <button class="theme-toggle" (click)="theme.toggle(); $event.stopPropagation()" [attr.aria-label]="theme.isDark() ? 'Switch to light mode' : 'Switch to dark mode'">
+        @if (theme.isDark()) {
+          <!-- Sun icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        } @else {
+          <!-- Moon icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        }
+      </button>
+      <a routerLink="/register" class="btn-start">START TRADING</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button
+      class="hamburger"
+      [class.open]="mobileOpen()"
+      (click)="toggleMobile()"
+      aria-label="Toggle menu"
+      [attr.aria-expanded]="mobileOpen()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="mobileOpen()" role="navigation">
+    <a routerLink="/markets"   (click)="closeMobile()">Products</a>
+    <a routerLink="/platforms" (click)="closeMobile()">Platforms</a>
+    <a routerLink="/accounts"  (click)="closeMobile()">Accounts</a>
+    <a href="#" (click)="closeMobile()">Insights</a>
+    <a href="#" (click)="closeMobile()">Partners</a>
+    <a href="#" (click)="closeMobile()">About us</a>
+    <a routerLink="/register" (click)="closeMobile()" class="mobile-start">START TRADING</a>
+  </div>
+</header>

@@ -1,0 +1,29 @@
+<div class="login-page">
+  <div class="login-card">
+
+    <div class="login-logo">
+      <img src="https://eq-cdn.equiti-me.com/website/documents/equiti-company-logo.svg"
+           alt="Equiti" class="login-logo-img" />
+    </div>
+
+    <h2 class="login-title">Login to Your Account</h2>
+    <p class="login-sub">Manage your accounts and access insightful reports and technical analysis among many more features.</p>
+
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+      <div class="field-wrap">
+        <label class="field-label">Email</label>
+        <input class="field-input" type="email" [(ngModel)]="email" name="email"
+               placeholder="example@email.com" required />
+      </div>
+
+      <button type="submit" class="btn-continue" [disabled]="loading">
+        {{ loading ? 'Please wait...' : 'Continue' }}
+      </button>
+    </form>
+
+  </div>
+
+  <p class="create-account">
+    Don't have an account? <a routerLink="/register" class="auth-link">Create Live Account</a>
+  </p>
+</div>

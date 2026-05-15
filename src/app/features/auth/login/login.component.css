@@ -1,0 +1,88 @@
+.login-page {
+  width: 100%;
+  max-width: 520px;
+  padding-top: 20px;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 70px 100px 50px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+/* Logo */
+.login-logo { margin-bottom: 28px; }
+.login-logo-img { height: 44px; width: auto; display: inline-block; }
+
+/* Title */
+.login-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A1D2E;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.login-sub {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.65;
+  margin-bottom: 36px;
+}
+
+/* Field */
+.field-wrap { margin-bottom: 20px; text-align: left; }
+.field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6B7280;
+  margin-bottom: 8px;
+}
+.field-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #1A1D2E;
+  background: #fff;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s;
+}
+.field-input:focus { border-color: #00B8A0; }
+.field-input::placeholder { color: #9CA3AF; }
+
+/* Continue button */
+.btn-continue {
+  width: 100%;
+  padding: 17px;
+  background: #00B8A0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-continue:hover:not(:disabled) { background: #009880; }
+.btn-continue:disabled { opacity: 0.7; cursor: not-allowed; }
+
+/* Bottom link */
+.create-account {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+.auth-link { color: #1D4ED8; text-decoration: none; font-weight: 600; }
+.auth-link:hover { text-decoration: underline; }
+
+@media (max-width: 560px) {
+  .login-card { padding: 36px 24px; }
+}

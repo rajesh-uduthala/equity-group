@@ -1,0 +1,255 @@
+<!-- Breadcrumb -->
+<nav class="breadcrumb container">
+  <a routerLink="/">Home</a>
+  <span class="bc-sep">›</span>
+  <span>Live Dashboard</span>
+</nav>
+
+<!-- ── Hero ──────────────────────────────────────────────────────────── -->
+<section class="dash-hero">
+  <div class="container">
+    <div class="dash-hero-inner">
+      <div class="dash-hero-left">
+        <span class="sect-label">Real-time Market Data</span>
+        <h1 class="dash-title">Live Market Dashboard</h1>
+        <p class="dash-sub">Track live prices, monitor global sessions and calculate your risk — all in one place.</p>
+        <div class="dash-meta">
+          <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+          <span class="data-note">8 instruments · updates every 600ms</span>
+          @if (londonNYOverlap) {
+            <span class="overlap-badge">🔥 London–NY Overlap</span>
+          }
+        </div>
+      </div>
+      <div class="dash-clock-block">
+        <div class="clock-time">{{ now() | date:'HH:mm:ss' }}</div>
+        <div class="clock-label">UTC</div>
+        <div class="clock-date">{{ now() | date:'EEEE, d MMM yyyy' }}</div>
+      </div>
+    </div>
+
+    <!-- Sessions -->
+    <div class="sessions-row">
+      @for (s of sessions; track s.name) {
+        <div class="session-card" [class.open]="isSessionOpen(s)" [style.--sc]="s.color">
+          <div class="session-flag">{{ s.flag }}</div>
+          <div class="session-body">
+            <div class="session-name">{{ s.name }}</div>
+            <div class="session-city">{{ s.city }}</div>
+          </div>
+          <div class="session-right">
+            <span class="session-status" [class.open]="isSessionOpen(s)">
+              {{ isSessionOpen(s) ? 'OPEN' : 'CLOSED' }}
+            </span>
+            <span class="session-timer">
+              {{ isSessionOpen(s) ? 'Closes in' : 'Opens in' }} {{ timeUntil(s) }}
+            </span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ── Ticker Strip ───────────────────────────────────────────────────── -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    @for (inst of instruments(); track inst.symbol) {
+      <span class="tick-item" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0">
+        <span class="tick-sym">{{ inst.symbol }}</span>
+        <span class="tick-price">{{ fmt(inst.price, inst.digits) }}</span>
+        <span class="tick-pct">{{ fmtPct(inst.changePct) }}</span>
+      </span>
+    }
+    @for (inst of instruments(); track inst.symbol) {
+      <span class="tick-item" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0">
+        <span class="tick-sym">{{ inst.symbol }}</span>
+        <span class="tick-price">{{ fmt(inst.price, inst.digits) }}</span>
+        <span class="tick-pct">{{ fmtPct(inst.changePct) }}</span>
+      </span>
+    }
+  </div>
+</div>
+
+<!-- ── Watchlist ─────────────────────────────────────────────────────── -->
+<section class="watchlist-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Live Watchlist</h2>
+      <span class="section-note">Prices refresh every 600ms</span>
+    </div>
+    <div class="watchlist-grid">
+      @for (inst of instruments(); track inst.symbol) {
+        <div class="inst-card" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0">
+          <div class="inst-top">
+            <div>
+              <span class="inst-symbol">{{ inst.symbol }}</span>
+              <span class="inst-cat">{{ inst.category }}</span>
+            </div>
+            <span class="inst-badge" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0">
+              {{ fmtPct(inst.changePct) }}
+            </span>
+          </div>
+          <div class="inst-name">{{ inst.name }}</div>
+          <div class="inst-price-row">
+            <span class="inst-price">{{ fmt(inst.price, inst.digits) }}</span>
+            <span class="inst-chg" [class.up]="inst.change >= 0" [class.dn]="inst.change < 0">
+              {{ fmtChange(inst.change, inst.digits) }}
+            </span>
+          </div>
+          <div class="inst-hl">
+            <span>H: {{ fmt(inst.high, inst.digits) }}</span>
+            <span>L: {{ fmt(inst.low, inst.digits) }}</span>
+          </div>
+          <div class="inst-spark">
+            <app-sparkline [prices]="inst.history" [up]="inst.changePct >= 0" [w]="160" [h]="48" />
+          </div>
+          <div class="inst-bidask">
+            <span class="bid-val">{{ fmt(inst.bid, inst.digits) }}<small>BID</small></span>
+            <span class="spread-sep">|</span>
+            <span class="ask-val">{{ fmt(inst.ask, inst.digits) }}<small>ASK</small></span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ── Bottom Tools ──────────────────────────────────────────────────── -->
+<section class="tools-section">
+  <div class="container tools-grid">
+
+    <!-- Position Size Calculator -->
+    <div class="calc-panel">
+      <div class="calc-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+        <h3>Position Size Calculator</h3>
+      </div>
+      <p class="calc-desc">Calculate your ideal lot size and risk parameters before entering a trade.</p>
+
+      <div class="calc-fields">
+        <div class="calc-field">
+          <label>Account Balance (USD)</label>
+          <div class="calc-input-wrap">
+            <span class="calc-prefix">$</span>
+            <input type="number" [(ngModel)]="balance" min="100" step="100" />
+          </div>
+        </div>
+        <div class="calc-field">
+          <label>Risk per Trade</label>
+          <div class="calc-input-wrap">
+            <input type="number" [(ngModel)]="riskPct" min="0.1" max="10" step="0.1" />
+            <span class="calc-suffix">%</span>
+          </div>
+          <div class="risk-bar-wrap">
+            <div class="risk-bar" [style.width.%]="riskBarPct" [style.background]="riskColor"></div>
+          </div>
+          <div class="risk-level" [style.color]="riskColor">{{ riskLevel }}</div>
+        </div>
+        <div class="calc-field">
+          <label>Entry Price</label>
+          <input type="number" [(ngModel)]="entry" step="0.00001" />
+        </div>
+        <div class="calc-field">
+          <label>Stop Loss</label>
+          <input type="number" [(ngModel)]="stopLoss" step="0.00001" />
+        </div>
+        <div class="calc-field">
+          <label>Take Profit</label>
+          <input type="number" [(ngModel)]="tpPrice" step="0.00001" />
+        </div>
+      </div>
+
+      <div class="calc-results">
+        <div class="calc-res-item">
+          <span class="cr-label">Risk Amount</span>
+          <span class="cr-val cr-risk">${{ riskAmt.toFixed(2) }}</span>
+        </div>
+        <div class="calc-res-item">
+          <span class="cr-label">Pips at Risk</span>
+          <span class="cr-val">{{ (pipDiff * 10000).toFixed(1) }}</span>
+        </div>
+        <div class="calc-res-item highlight">
+          <span class="cr-label">Lot Size</span>
+          <span class="cr-val cr-primary">{{ lotSize.toFixed(4) }}</span>
+        </div>
+        <div class="calc-res-item">
+          <span class="cr-label">Units</span>
+          <span class="cr-val">{{ (lotSize * 100000).toFixed(0) | number }}</span>
+        </div>
+        <div class="calc-res-item">
+          <span class="cr-label">R:R Ratio</span>
+          <span class="cr-val" [class.cr-green]="rrRatio >= 2">1 : {{ rrRatio.toFixed(2) }}</span>
+        </div>
+        <div class="calc-res-item">
+          <span class="cr-label">Potential Profit</span>
+          <span class="cr-val cr-green">≈ ${{ potentialP.toFixed(2) }}</span>
+        </div>
+      </div>
+      <p class="calc-note">* Simplified for USD-denominated pairs. 1 pip = $10/lot at standard lot size.</p>
+    </div>
+
+    <!-- Live Spread Table -->
+    <div class="spread-panel">
+      <div class="spread-header-row">
+        <div class="calc-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <h3>Live Spreads</h3>
+        </div>
+        <span class="live-badge sm"><span class="live-dot"></span>LIVE</span>
+      </div>
+      <p class="calc-desc">Real-time bid/ask spreads across all instruments.</p>
+
+      <div class="spread-table">
+        <div class="st-head">
+          <span>Symbol</span>
+          <span>Bid</span>
+          <span>Ask</span>
+          <span>Spread</span>
+          <span>Change</span>
+        </div>
+        @for (inst of instruments(); track inst.symbol) {
+          <div class="st-row" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0">
+            <span class="st-sym">
+              <span class="st-dot" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0"></span>
+              {{ inst.symbol }}
+            </span>
+            <span class="st-num">{{ fmt(inst.bid, inst.digits) }}</span>
+            <span class="st-num">{{ fmt(inst.ask, inst.digits) }}</span>
+            <span class="st-spread">{{ spreadPips(inst) }}</span>
+            <span class="st-chg" [class.up]="inst.changePct >= 0" [class.dn]="inst.changePct < 0">
+              {{ fmtPct(inst.changePct) }}
+            </span>
+          </div>
+        }
+      </div>
+
+      <!-- Session overlap note -->
+      <div class="overlap-info">
+        <div class="oi-row" [class.active]="londonNYOverlap">
+          <span class="oi-dot" [class.active]="londonNYOverlap"></span>
+          <span>London – New York overlap (13:00–17:00 UTC)</span>
+          <span class="oi-status">{{ londonNYOverlap ? 'NOW ACTIVE' : 'inactive' }}</span>
+        </div>
+        <div class="oi-row">
+          <span class="oi-dot"></span>
+          <span>Tokyo – London overlap (08:00–09:00 UTC)</span>
+          <span class="oi-status">{{ (now().getUTCHours() === 8) ? 'NOW ACTIVE' : 'inactive' }}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CTA ───────────────────────────────────────────────────────────── -->
+<section class="dash-cta">
+  <div class="container">
+    <h2>Ready to trade live markets?</h2>
+    <p>Open an account in minutes and start trading with real-time execution.</p>
+    <div class="dash-cta-btns">
+      <a routerLink="/register" class="btn-cta-primary">Open Live Account</a>
+      <a routerLink="/accounts" class="btn-cta-outline">Compare Accounts</a>
+    </div>
+  </div>
+</section>

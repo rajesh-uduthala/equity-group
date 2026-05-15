@@ -1,0 +1,110 @@
+<div class="reg-page">
+  <h1 class="reg-title">Registration</h1>
+
+  <div class="reg-card">
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+
+      <!-- Country -->
+      <div class="field-wrap">
+        <label class="field-label">Country / Region of Residence</label>
+        <div class="select-wrap">
+          <span class="selected-flag">{{ selectedFlag }}</span>
+          <select [(ngModel)]="form.country" name="country" (change)="onCountryChange()" class="field-select">
+            @for (c of countries; track c.code) {
+              <option [value]="c.code"> {{ c.name }}</option>
+            }
+          </select>
+          <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+
+      <!-- Name row -->
+      <div class="name-row">
+        <div class="field-wrap">
+          <label class="field-label">First Name</label>
+          <input class="field-input" type="text" [(ngModel)]="form.firstName" name="firstName" placeholder="First Name" />
+          <span class="field-hint">As per your Passport / Government ID</span>
+        </div>
+        <div class="field-wrap">
+          <label class="field-label">Last Name</label>
+          <input class="field-input" type="text" [(ngModel)]="form.lastName" name="lastName" placeholder="Last Name" />
+          <span class="field-hint">As per your Passport / Government ID</span>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="field-wrap">
+        <label class="field-label">Email address</label>
+        <input class="field-input" type="email" [(ngModel)]="form.email" name="email" placeholder="Email address" />
+      </div>
+
+      <!-- Phone -->
+      <div class="phone-row">
+        <div class="phone-flag-wrap">
+          <span class="pf-flag">{{ selectedFlag }}</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <input class="field-input phone-code" type="text" [value]="dialCode" readonly />
+        <input class="field-input phone-num" type="tel" [(ngModel)]="form.phone" name="phone" placeholder="Phone number" />
+      </div>
+
+      <!-- Password section -->
+      <h3 class="pw-section-title">Create your account password</h3>
+      <div class="field-wrap">
+        <label class="field-label">Account Password</label>
+        <div class="pw-wrap">
+          <input class="field-input" [type]="showPassword ? 'text' : 'password'"
+                 [(ngModel)]="form.password" name="password" placeholder="Account Password" />
+          <button type="button" class="eye-btn" (click)="showPassword = !showPassword" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              @if (showPassword) {
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+                <line x1="1" y1="1" x2="23" y2="23"/>
+              } @else {
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              }
+            </svg>
+          </button>
+        </div>
+        <span class="field-hint">This password will be used to login to your MetaTrader trading account and the MyEquiti Client Portal.</span>
+      </div>
+
+      <!-- US person checkbox -->
+      <label class="checkbox-row">
+        <input type="checkbox" [(ngModel)]="form.notUS" name="notUS" class="checkbox-input" />
+        <span class="checkbox-text">I declare and confirm that I am not a citizen or resident of the US for tax purposes.</span>
+      </label>
+
+      <!-- reCAPTCHA placeholder -->
+      <div class="recaptcha-box">
+        <label class="recaptcha-inner">
+          <input type="checkbox" [(ngModel)]="form.captcha" name="captcha" class="checkbox-input" />
+          <span class="rc-label">I'm not a robot</span>
+        </label>
+        <div class="rc-logo">
+          <span class="rc-brand">reCAPTCHA</span>
+          <span class="rc-sub">Privacy - Terms</span>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn-continue" [disabled]="loading">
+        {{ loading ? 'PROCESSING...' : 'CONTINUE' }}
+      </button>
+
+      <!-- Legal -->
+      <p class="legal-text">
+        Based on the selected country of residence, you are registering with Equiti, regulated by the Seychelles FSA. By clicking Continue you confirm that you have read, understood, and agree with all the information in the <a href="#" class="legal-link">Client Agreement</a>.
+      </p>
+      <p class="legal-text">
+        Equiti Brokerage (Seychelles) Limited is authorized by the Financial Services Authority of Seychelles under license number SD064 as a Securities Dealers Broker.
+      </p>
+
+    </form>
+  </div>
+
+  <p class="already-account">
+    Already have an account? <a routerLink="/login" class="auth-link">Log in</a>
+  </p>
+</div>
