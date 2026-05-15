@@ -313,74 +313,146 @@
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Mobile Menu */
+/* ── Mobile Menu ─────────────────────────────────────── */
 .mobile-menu {
   display: none;
   flex-direction: column;
   max-height: calc(100vh - 64px);
   overflow-y: auto;
-  padding: 12px 20px 24px;
+  padding: 16px 20px 28px;
   border-top: 1px solid var(--border);
   background: var(--surface);
 }
 .mobile-menu.open { display: flex; }
 
-/* Section group */
-.mm-group {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0 4px;
+/* Top CTA button */
+.mm-cta-top {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  margin-bottom: 8px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+.mm-cta-top:hover { background: var(--primary-hover); }
+
+/* Accordion section */
+.mm-section {
   border-bottom: 1px solid var(--border);
 }
-.mm-group:last-of-type { border-bottom: none; }
 
-/* Section heading */
-.mm-label {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  color: #9CA3AF;
-  margin-bottom: 6px;
-  padding: 0 4px;
-}
-
-/* Nav link inside mobile menu */
-.mm-link {
-  color: var(--text-2, #374151);
-  text-decoration: none;
-  padding: 10px 4px;
-  font-size: 15px;
+/* Section header button */
+.mm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 4px;
+  background: none;
+  border: none;
+  font-size: 16px;
   font-weight: 500;
-  border-radius: 6px;
-  transition: color 0.15s, background 0.15s;
-  display: block;
+  color: var(--text-2, #374151);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.15s;
 }
-.mm-link:hover { color: #00B8A0; background: rgba(0,184,160,0.05); }
+.mm-header.active,
+.mm-header:hover { color: #00B8A0; }
 
-/* "About us" standalone link */
-.mm-about {
-  margin-top: 12px;
-  padding: 10px 4px;
-  border-bottom: none;
+/* Chevron */
+.mm-chevron {
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  color: #9CA3AF;
+}
+.mm-chevron.open {
+  transform: rotate(180deg);
+  color: #00B8A0;
+}
+.mm-header.active .mm-chevron { color: #00B8A0; }
+
+/* Expanded items list */
+.mm-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4px 12px;
+  gap: 2px;
 }
 
-/* Bottom action row */
-.mm-actions {
+/* Individual link row */
+.mm-link {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 18px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
+  padding: 10px 10px;
+  border-radius: 8px;
+  color: var(--text-2, #374151);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.15s, background 0.15s;
+}
+.mm-link:hover {
+  color: #00B8A0;
+  background: rgba(0, 184, 160, 0.06);
+}
+
+/* Small icon circle inside items */
+.mm-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F0FDF9;
+  border-radius: 7px;
+  color: #00B8A0;
+}
+.mm-icon svg { width: 16px; height: 16px; }
+
+/* Badge icon (for MT4 / MT5) */
+.mm-icon-badge {
+  font-size: 13px;
+  font-weight: 700;
+  color: #00B8A0;
+  background: #E8FBF8;
+  border-radius: 7px;
+}
+
+/* Standalone "About us" link */
+.mm-standalone {
+  display: block;
+  padding: 16px 4px;
+  color: var(--text-2, #374151);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.15s;
+}
+.mm-standalone:hover { color: #00B8A0; }
+
+/* Bottom action row (theme toggle) */
+.mm-actions {
+  display: flex;
+  margin-top: 20px;
 }
 
 /* Theme toggle inside mobile menu */
 .mm-theme-toggle {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 9px 14px;
+  gap: 8px;
+  padding: 10px 16px;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -389,31 +461,14 @@
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
-  white-space: nowrap;
+  width: 100%;
+  justify-content: center;
 }
 .mm-theme-toggle:hover {
   background: var(--primary-light);
   color: var(--primary);
   border-color: var(--primary);
 }
-
-/* START TRADING CTA */
-.mm-cta {
-  flex: 1;
-  display: block;
-  text-align: center;
-  padding: 10px 16px;
-  background: var(--primary);
-  color: #fff;
-  border-radius: var(--radius-sm);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background var(--transition);
-}
-.mm-cta:hover { background: var(--primary-hover); }
 
 @media (max-width: 900px) {
   .nav-item { padding: 8px 9px; font-size: 13px; }

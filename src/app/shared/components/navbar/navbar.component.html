@@ -219,44 +219,140 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" [class.open]="mobileOpen()" role="navigation">
 
-    <div class="mm-group">
-      <span class="mm-label">Products</span>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Forex</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Indices</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Commodities</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Shares</a>
-      <a href="#"                  (click)="closeMobile()" class="mm-link">Crypto CFDs</a>
+    <!-- Top CTA -->
+    <a routerLink="/register" (click)="closeMobile()" class="mm-cta-top">START TRADING</a>
+
+    <!-- Products -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'products'" (click)="toggleMobileSection('products')">
+        <span>Products</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'products'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'products') {
+        <div class="mm-items">
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="12" width="3" height="9" rx="1"/><rect x="10.5" y="6" width="3" height="15" rx="1"/><rect x="18" y="3" width="3" height="18" rx="1"/></svg></span>
+            Forex
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+            Indices
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 7 5 10.5 5 14a7 7 0 0 0 14 0c0-3.5-3-7-7-12z"/></svg></span>
+            Commodities
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg></span>
+            Shares
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v2m0 8v2M9.5 9.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 2.5-5 2.5-5 5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5"/></svg></span>
+            Crypto CFDs
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></span>
+            Gold Option CFDs
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Platforms</span>
-      <a routerLink="/platforms/metatrader-4" (click)="closeMobile()" class="mm-link">MetaTrader 4</a>
-      <a href="#"                             (click)="closeMobile()" class="mm-link">MetaTrader 5</a>
+    <!-- Platforms -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'platforms'" (click)="toggleMobileSection('platforms')">
+        <span>Platforms</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'platforms'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'platforms') {
+        <div class="mm-items">
+          <a routerLink="/platforms/metatrader-4" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon mm-icon-badge">4</span>
+            MetaTrader 4
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon mm-icon-badge">5</span>
+            MetaTrader 5
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Accounts</span>
-      <a routerLink="/accounts" (click)="closeMobile()" class="mm-link">Trading Accounts</a>
-      <a href="#"               (click)="closeMobile()" class="mm-link">Copy Trading</a>
-      <a href="#"               (click)="closeMobile()" class="mm-link">Demo Account</a>
+    <!-- Accounts -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'accounts'" (click)="toggleMobileSection('accounts')">
+        <span>Accounts</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'accounts'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'accounts') {
+        <div class="mm-items">
+          <a routerLink="/accounts" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
+            Trading Accounts
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></span>
+            Copy Trading
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9" stroke-dasharray="4 2"/></svg></span>
+            Demo Account
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Insights</span>
-      <a routerLink="/dashboard"     (click)="closeMobile()" class="mm-link">Live Dashboard</a>
-      <a routerLink="/trading-tools" (click)="closeMobile()" class="mm-link">Trading Tools</a>
-      <a href="#"                    (click)="closeMobile()" class="mm-link">Education</a>
-      <a href="#"                    (click)="closeMobile()" class="mm-link">News</a>
+    <!-- Insights -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'insights'" (click)="toggleMobileSection('insights')">
+        <span>Insights</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'insights'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'insights') {
+        <div class="mm-items">
+          <a routerLink="/dashboard" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+            Live Dashboard
+          </a>
+          <a routerLink="/trading-tools" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+            Trading Tools
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+            Education
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l6 6v8a2 2 0 0 1-2 2z"/></svg></span>
+            News
+          </a>
+        </div>
+      }
     </div>
 
-    <div class="mm-group">
-      <span class="mm-label">Partners</span>
-      <a href="#" (click)="closeMobile()" class="mm-link">Partnerships</a>
-      <a href="#" (click)="closeMobile()" class="mm-link">Refer a Friend</a>
+    <!-- Partners -->
+    <div class="mm-section">
+      <button class="mm-header" [class.active]="activeMobileSection() === 'partners'" (click)="toggleMobileSection('partners')">
+        <span>Partners</span>
+        <svg class="mm-chevron" [class.open]="activeMobileSection() === 'partners'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      @if (activeMobileSection() === 'partners') {
+        <div class="mm-items">
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            Partnerships
+          </a>
+          <a href="#" (click)="closeMobile()" class="mm-link">
+            <span class="mm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></span>
+            Refer a Friend
+          </a>
+        </div>
+      }
     </div>
 
-    <a href="#" (click)="closeMobile()" class="mm-link mm-about">About us</a>
+    <a href="#" (click)="closeMobile()" class="mm-standalone">About us</a>
 
+    <!-- Theme toggle -->
     <div class="mm-actions">
       <button class="mm-theme-toggle" (click)="theme.toggle(); $event.stopPropagation()">
         @if (theme.isDark()) {
@@ -267,7 +363,6 @@
           Dark Mode
         }
       </button>
-      <a routerLink="/register" (click)="closeMobile()" class="mm-cta">START TRADING</a>
     </div>
 
   </div>
