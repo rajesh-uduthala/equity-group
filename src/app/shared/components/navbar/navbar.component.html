@@ -218,12 +218,57 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" [class.open]="mobileOpen()" role="navigation">
-    <a routerLink="/markets"   (click)="closeMobile()">Products</a>
-    <a routerLink="/platforms" (click)="closeMobile()">Platforms</a>
-    <a routerLink="/accounts"  (click)="closeMobile()">Accounts</a>
-    <a href="#" (click)="closeMobile()">Insights</a>
-    <a href="#" (click)="closeMobile()">Partners</a>
-    <a href="#" (click)="closeMobile()">About us</a>
-    <a routerLink="/register" (click)="closeMobile()" class="mobile-start">START TRADING</a>
+
+    <div class="mm-group">
+      <span class="mm-label">Products</span>
+      <a href="#"                  (click)="closeMobile()" class="mm-link">Forex</a>
+      <a href="#"                  (click)="closeMobile()" class="mm-link">Indices</a>
+      <a href="#"                  (click)="closeMobile()" class="mm-link">Commodities</a>
+      <a href="#"                  (click)="closeMobile()" class="mm-link">Shares</a>
+      <a href="#"                  (click)="closeMobile()" class="mm-link">Crypto CFDs</a>
+    </div>
+
+    <div class="mm-group">
+      <span class="mm-label">Platforms</span>
+      <a routerLink="/platforms/metatrader-4" (click)="closeMobile()" class="mm-link">MetaTrader 4</a>
+      <a href="#"                             (click)="closeMobile()" class="mm-link">MetaTrader 5</a>
+    </div>
+
+    <div class="mm-group">
+      <span class="mm-label">Accounts</span>
+      <a routerLink="/accounts" (click)="closeMobile()" class="mm-link">Trading Accounts</a>
+      <a href="#"               (click)="closeMobile()" class="mm-link">Copy Trading</a>
+      <a href="#"               (click)="closeMobile()" class="mm-link">Demo Account</a>
+    </div>
+
+    <div class="mm-group">
+      <span class="mm-label">Insights</span>
+      <a routerLink="/dashboard"     (click)="closeMobile()" class="mm-link">Live Dashboard</a>
+      <a routerLink="/trading-tools" (click)="closeMobile()" class="mm-link">Trading Tools</a>
+      <a href="#"                    (click)="closeMobile()" class="mm-link">Education</a>
+      <a href="#"                    (click)="closeMobile()" class="mm-link">News</a>
+    </div>
+
+    <div class="mm-group">
+      <span class="mm-label">Partners</span>
+      <a href="#" (click)="closeMobile()" class="mm-link">Partnerships</a>
+      <a href="#" (click)="closeMobile()" class="mm-link">Refer a Friend</a>
+    </div>
+
+    <a href="#" (click)="closeMobile()" class="mm-link mm-about">About us</a>
+
+    <div class="mm-actions">
+      <button class="mm-theme-toggle" (click)="theme.toggle(); $event.stopPropagation()">
+        @if (theme.isDark()) {
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          Light Mode
+        } @else {
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          Dark Mode
+        }
+      </button>
+      <a routerLink="/register" (click)="closeMobile()" class="mm-cta">START TRADING</a>
+    </div>
+
   </div>
 </header>
